@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 /**
  * 待渲染的路由
