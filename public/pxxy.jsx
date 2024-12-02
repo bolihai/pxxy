@@ -66,6 +66,13 @@ const router = createBrowserRouter([
       {
         errorElement: suspenseLoading(<Error />),
         children: [
+          // 主页
+          {
+            index: true,
+            path: "/homepage",
+            element: <HomePage />,
+            loader: homePageLoader,
+          },
           // 教师
           {
             path: "/teacher",
@@ -83,12 +90,6 @@ const router = createBrowserRouter([
             path: "/person",
             element: <Person />,
             loader: personLoader,
-          },
-          // 主页
-          {
-            path: "/homepage",
-            element: <HomePage />,
-            loader: homePageLoader,
           },
           // 论坛
           {
