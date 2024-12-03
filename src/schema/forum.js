@@ -1,4 +1,3 @@
-// 导入数据库
 const mongoose = require("mongoose");
 
 /**
@@ -44,13 +43,13 @@ const commentSchema = new mongoose.Schema({
    * 名称：发布人
    * 备注：发布人id
    */
-  commenter: { type: String, required: true, immutable: true, immutable: true },
+  commenter: { type: String, required: true, immutable: true },
 
   /**
    * 名称：评论内容
    * 备注：最大长度为300
    */
-  comtent: { type: String, required: true, maxlength: 300 },
+  content: { type: String, required: true, maxlength: 300 },
 
   /**
    * 名称：点赞数
@@ -60,7 +59,7 @@ const commentSchema = new mongoose.Schema({
 
   /**
    * 名称：回复帖子
-   * 备注：将回复该条评论的的所有表放进来
+   * 备注：将回复该条评论的所有表放进来
    */
   reply: { type: [replySchema] },
 
@@ -113,7 +112,7 @@ const forumSchema = new mongoose.Schema({
 });
 
 // 创建论坛帖子表
-const ForumSchema = mongoose.model("ForumSchema", forumSchema);
+const Forum = mongoose.model("Forum", forumSchema);
 
 // 导出
-module.exports = { ForumSchema, commentSchema, replySchema };
+module.exports = { Forum, commentSchema, replySchema };

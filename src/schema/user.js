@@ -1,6 +1,5 @@
 // 导入数据库
 const mongoose = require("mongoose");
-const { TeacherSchema } = require("./resource");
 
 /**
  * 定义教师人员数据库模式
@@ -103,7 +102,12 @@ const userSchema = new mongoose.Schema({
   /**
    * 名称：课程资源
    */
-  resource: { type: [TeacherSchema] },
+  resource: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "TeacherSchema",
+    },
+  ],
 
   /**
    * 名称：权限
