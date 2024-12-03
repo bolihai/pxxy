@@ -12,7 +12,7 @@ export async function loader() {
 export default function Login() {
   return (
     <Box>
-      <Typography>登录</Typography>
+      <Typography style={{ fontFamily: "NotoSans" }}>登录</Typography>
     </Box>
   );
 }
