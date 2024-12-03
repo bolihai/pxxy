@@ -2,7 +2,7 @@
   "name": "pxxy",
   "version": "1.0.0",
   "description": "萍乡学院教师个人主页交流管理系统",
-  "main": "./public/pxxy.jsx",
+  "main": "./src/pxxy.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:w": "webpack --config webpack.config.js --output-pathinfo --watch"

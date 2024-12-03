@@ -1,10 +1,9 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   watch: true,
   entry: {
-    pxxy: "./public/pxxy.jsx",
+    pxxy: "./src/pxxy.jsx",
   },
   module: {
     rules: [
@@ -43,19 +42,13 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    },
-  },
   resolve: {
     extensions: [".js", ".jsx"],
   },
   output: {
-    path: path.resolve(__dirname, "./public/dist"),
-    publicPath: "/dist/",
+    path: path.resolve(__dirname, "./src/dist"),
+    publicPath: "auto",
     filename: "[name].bundle.js",
   },
-  plugins: [new CleanWebpackPlugin()],
   mode: "development",
 };
