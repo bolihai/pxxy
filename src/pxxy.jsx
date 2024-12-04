@@ -14,7 +14,7 @@ import Teacher, { loader as teacherLoader } from "./component/teacher/Teacher";
 import Register, {
   loader as registerLoader,
 } from "./component/register/register";
-import Root, { loader as rootLoader } from "./component/root/Root";
+import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";
 import ProgressDialog from "./component/common/ProgressDialog";
@@ -54,7 +54,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     errorElement: suspenseLoading(<RootError />),
-    loader: rootLoader,
     children: [
       {
         errorElement: suspenseLoading(<Error />),
