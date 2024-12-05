@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { Link as RouterLink } from "react-router-dom";
+import { Link, Link as RouterLink } from "react-router-dom";
 const buttonStyles = (isActive) => ({
   fontSize: isActive ? "32px" : "28px",
   fontFamily: "monospace",
@@ -100,6 +100,8 @@ export default function TopBar() {
           >
             <Button
               sx={{ ...buttonStyles(false), mr: "60px", fontSize: "16px" }}
+              component={Link}
+              to="/login"
             >
               <AccountCircleIcon sx={{ mr: 1, fontSize: "24px" }} />
               登录

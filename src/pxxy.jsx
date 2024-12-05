@@ -13,7 +13,7 @@ import SchoolProfile, {
 import Teacher, { loader as teacherLoader } from "./component/teacher/Teacher";
 import Register, {
   loader as registerLoader,
-} from "./component/register/register";
+} from "./component/register/Register";
 import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";

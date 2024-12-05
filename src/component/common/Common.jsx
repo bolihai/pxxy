@@ -2,6 +2,7 @@ import React from "react";
 
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
+import TextField from "@mui/material/TextField";
 
 /**
  * Flex box container
@@ -128,3 +129,21 @@ export const RowFlexBoxEC = flexBox("row nowrap", "flex-end", "center");
  * Flex box: row nowrap, center, center
  */
 export const RowFlexBoxCC = flexBox("row nowrap", "center", "center");
+
+/**
+ * textfield
+ */
+export const EditTextField = styled(TextField)({
+  "& label": {
+    color: "black",
+  },
+  "& label.Mui-focused": {
+    color: "black",
+  },
+  "& .MuiInput-underline::before": {
+    borderBottomColor: "black",
+  },
+  "& .MuiInput-underline::after": {
+    borderBottomColor: "black",
+  },
+});
