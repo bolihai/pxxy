@@ -19,9 +19,8 @@ const buttonStyles = (isActive) => ({
 });
 const Items = [
   { label: "首页", to: "/homepage" },
-  { label: "学校概况", to: "/schoolProfile" },
   { label: "论坛", to: "/forum" },
-  { label: "教师", to: "/teacher" },
+  { label: "学院", to: "/institution" },
   { label: "个人", to: "/person" },
 ];
 export default function TopBar() {
@@ -60,7 +59,7 @@ export default function TopBar() {
           >
             <a href="https://www.pxc.jx.cn">
               <img
-                src="images/apple-touch-icon.png"
+                src="/assets/images/apple-touch-icon.png"
                 alt="Icon"
                 style={{ width: "70px", height: "70px" }}
               />
@@ -74,7 +73,7 @@ export default function TopBar() {
               }}
             >
               <img
-                src="/assets/school.png"
+                src="/assets/images/school.png"
                 style={{ width: "120px", height: "60px" }}
               />
             </Box>

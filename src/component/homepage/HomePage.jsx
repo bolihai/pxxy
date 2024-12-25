@@ -17,16 +17,16 @@ export async function loader() {
 
 export default function HomePage() {
   const carouselItems = [
-    { name: "林一", image: "/dist/assets/images/example.jpg" },
-    { name: "彭二", image: "/dist/assets/images/example2.jpg" },
-    { name: "张三", image: "/dist/assets/images/example3.jpg" },
-    { name: "李四", image: "/dist/assets/images/example4.jpg" },
-    { name: "王五", image: "/dist/assets/images/example5.jpg" },
-    { name: "赵六", image: "/dist/assets/images/example6.jpg" },
-    { name: "钱七", image: "/dist/assets/images/example.jpg" },
-    { name: "孙八", image: "/dist/assets/images/example2.jpg" },
-    { name: "周九", image: "/dist/assets/images/example3.jpg" },
-    { name: "吴十", image: "/dist/assets/images/example4.jpg" },
+    { name: "林一", image: "/assets/images/example.jpg" },
+    { name: "彭二", image: "/assets/images/example2.jpg" },
+    { name: "张三", image: "/assets/images/example3.jpg" },
+    { name: "李四", image: "/assets/images/example4.jpg" },
+    { name: "王五", image: "/assets/images/example5.jpg" },
+    { name: "赵六", image: "/assets/images/example6.jpg" },
+    { name: "钱七", image: "/assets/images/example.jpg" },
+    { name: "孙八", image: "/assets/images/example2.jpg" },
+    { name: "周九", image: "/assets/images/example3.jpg" },
+    { name: "吴十", image: "/assets/images/example4.jpg" },
   ];
 
   const arrowStyle = {

@@ -6,27 +6,27 @@
       "department": "商学院",
       "email": "zhangsan@business.edu",
       "password": "Aa123456!",
-      "portrait": "/resources/portraits/zhangsan.jpg",
+      "portrait": "/assets/images/zhangsan.jpg",
       "individualResume": "张三，商学院教授，主要研究方向为市场营销和品牌管理。",
       "education": "北京大学 MBA",
       "researchField": "市场营销",
       "telephone": "13800000001",
       "academicAchevement": "发表论文20篇，出版专著3本。",
-      "homePageBk": "/resources/homepage/business.jpg",
+      "homePageBk": "/assets/images/business.jpg",
       "likes": 102,
       "resource": [
         {
           "type": "pdf",
           "headline": "市场营销概论",
           "description": "市场营销的基本概念与实务操作。",
-          "file": "/resources/market_intro.pdf",
+          "file": "/assets/market_intro.pdf",
           "category": "教材"
         },
         {
           "type": "png",
           "headline": "营销数据分析图表",
           "description": "课程中使用的营销数据分析图表。",
-          "file": "/resources/marketing_chart.png",
+          "file": "/assets/marketing_chart.png",
           "category": "资料"
         }
       ],
@@ -38,27 +38,27 @@
       "department": "商学院",
       "email": "lisi@business.edu",
       "password": "Ab123456!",
-      "portrait": "/resources/portraits/lisi.jpg",
+      "portrait": "/assets/images/lisi.jpg",
       "individualResume": "李四，商学院讲师，专注于国际贸易和跨境电商。",
       "education": "清华大学 经济学博士",
       "researchField": "国际贸易",
       "telephone": "13800000002",
       "academicAchevement": "在国内外期刊上发表多篇关于跨境电商的论文。",
-      "homePageBk": "/resources/homepage/business2.jpg",
+      "homePageBk": "/assets/images/business2.jpg",
       "likes": 89,
       "resource": [
         {
           "type": "jpg",
           "headline": "国际贸易流程图",
           "description": "国际贸易流程的可视化图示。",
-          "file": "/resources/trade_flow.jpg",
+          "file": "/assets/trade_flow.jpg",
           "category": "教学辅助"
         },
         {
           "type": "pdf",
           "headline": "跨境电商的挑战与机遇",
           "description": "关于跨境电商的研究论文。",
-          "file": "/resources/cross_border_ecommerce.pdf",
+          "file": "/assets/cross_border_ecommerce.pdf",
           "category": "论文"
         }
       ],
@@ -70,27 +70,27 @@
       "department": "人文与传媒学院",
       "email": "wangwu@hmc.edu",
       "password": "Ww123456!",
-      "portrait": "/resources/portraits/wangwu.jpg",
+      "portrait": "/assets/images/wangwu.jpg",
       "individualResume": "王五，人文与传媒学院教授，研究方向为传播学与社会变迁。",
       "education": "复旦大学 传播学博士",
       "researchField": "传播学",
       "telephone": "13800000003",
       "academicAchevement": "主持过多个国家级科研项目，出版学术专著5部。",
-      "homePageBk": "/resources/homepage/hmc.jpg",
+      "homePageBk": "/assets/images/hmc.jpg",
       "likes": 134,
       "resource": [
         {
           "type": "pdf",
           "headline": "传播学基础理论",
           "description": "传播学的基本理论框架和经典研究。",
-          "file": "/resources/communication_theory.pdf",
+          "file": "/assets/communication_theory.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "社会变迁影响图",
           "description": "社会变迁的相关研究成果图表。",
-          "file": "/resources/social_change_chart.jpg",
+          "file": "/assets/social_change_chart.jpg",
           "category": "数据"
         }
       ],
@@ -102,27 +102,27 @@
       "department": "人文与传媒学院",
       "email": "zhaoliu@hmc.edu",
       "password": "Zz123456!",
-      "portrait": "/resources/portraits/zhaoliu.jpg",
+      "portrait": "/assets/images/zhaoliu.jpg",
       "individualResume": "赵六，人文与传媒学院讲师，专注于新媒体与数字传播。",
       "education": "上海交通大学 媒体与传播硕士",
       "researchField": "新媒体传播",
       "telephone": "13800000004",
       "academicAchevement": "发表新媒体传播相关论文10篇，参与多个行业合作项目。",
-      "homePageBk": "/resources/homepage/hmc2.jpg",
+      "homePageBk": "/assets/images/hmc2.jpg",
       "likes": 72,
       "resource": [
         {
           "type": "png",
           "headline": "新媒体发展趋势图",
           "description": "新媒体发展趋势的可视化图示。",
-          "file": "/resources/new_media_trend.png",
+          "file": "/assets/new_media_trend.png",
           "category": "图表"
         },
         {
           "type": "pdf",
           "headline": "数字传播研究综述",
           "description": "数字传播研究的最新综述文章。",
-          "file": "/resources/digital_communication_review.pdf",
+          "file": "/assets/digital_communication_review.pdf",
           "category": "学术论文"
         }
       ],
@@ -134,27 +134,27 @@
       "department": "工程与管理学院",
       "email": "zhouqi@engineering.edu",
       "password": "Zq123456!",
-      "portrait": "/resources/portraits/zhouqi.jpg",
+      "portrait": "/assets/images/zhouqi.jpg",
       "individualResume": "周七，工程与管理学院副教授，研究领域为项目管理与工程经济学。",
       "education": "华中科技大学 工程管理硕士",
       "researchField": "项目管理",
       "telephone": "13800000005",
       "academicAchevement": "参与多个国际合作项目，发表论文8篇。",
-      "homePageBk": "/resources/homepage/engineering.jpg",
+      "homePageBk": "/assets/images/engineering.jpg",
       "likes": 56,
       "resource": [
         {
           "type": "pdf",
           "headline": "项目管理基础",
           "description": "介绍项目管理的基本方法和流程。",
-          "file": "/resources/project_management.pdf",
+          "file": "/assets/project_management.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "工程经济学模型",
           "description": "工程经济学分析模型图。",
-          "file": "/resources/engineering_economics.jpg",
+          "file": "/assets/engineering_economics.jpg",
           "category": "研究资料"
         }
       ],
@@ -166,27 +166,27 @@
       "department": "工程与管理学院",
       "email": "qianba@engineering.edu",
       "password": "Qb123456!",
-      "portrait": "/resources/portraits/qianba.jpg",
+      "portrait": "/assets/images/qianba.jpg",
       "individualResume": "钱八，工程与管理学院讲师，专注于工程项目的风险管理。",
       "education": "同济大学 工程管理博士",
       "researchField": "工程风险管理",
       "telephone": "13800000006",
       "academicAchevement": "发表论文5篇，研究方向包括风险评估与项目决策。",
-      "homePageBk": "/resources/homepage/engineering2.jpg",
+      "homePageBk": "/assets/images/engineering2.jpg",
       "likes": 43,
       "resource": [
         {
           "type": "png",
           "headline": "工程风险评估模型",
           "description": "风险评估的数学模型与应用。",
-          "file": "/resources/risk_assessment.png",
+          "file": "/assets/risk_assessment.png",
           "category": "研究报告"
         },
         {
           "type": "pdf",
           "headline": "项目决策与风险管理",
           "description": "关于项目决策与风险管理的研究论文。",
-          "file": "/resources/project_decision_risk.pdf",
+          "file": "/assets/project_decision_risk.pdf",
           "category": "学术论文"
         }
       ],
@@ -198,27 +198,27 @@
       "department": "外国语学院",
       "email": "sunjiu@foreignlanguages.edu",
       "password": "Sj123456!",
-      "portrait": "/resources/portraits/sunjiu.jpg",
+      "portrait": "/assets/images/sunjiu.jpg",
       "individualResume": "孙九，外国语学院教授，研究方向为跨文化交际与应用语言学。",
       "education": "南京大学 英语语言文学博士",
       "researchField": "跨文化交际",
       "telephone": "13800000007",
       "academicAchevement": "在国际期刊上发表20篇关于跨文化交流的文章。",
-      "homePageBk": "/resources/homepage/foreignlanguages.jpg",
+      "homePageBk": "/assets/images/foreignlanguages.jpg",
       "likes": 110,
       "resource": [
         {
           "type": "pdf",
           "headline": "跨文化交际导论",
           "description": "跨文化交际的基本理论与实践应用。",
-          "file": "/resources/intercultural_communication.pdf",
+          "file": "/assets/intercultural_communication.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "文化差异分析图",
           "description": "文化差异的可视化分析图。",
-          "file": "/resources/cultural_difference.jpg",
+          "file": "/assets/cultural_difference.jpg",
           "category": "研究资料"
         }
       ],
@@ -230,27 +230,27 @@
       "department": "外国语学院",
       "email": "wushi@foreignlanguages.edu",
       "password": "Ws123456!",
-      "portrait": "/resources/portraits/wushi.jpg",
+      "portrait": "/assets/images/wushi.jpg",
       "individualResume": "吴十，外国语学院讲师，研究领域包括语言教学与翻译。",
       "education": "北京外国语大学 翻译硕士",
       "researchField": "翻译学",
       "telephone": "13800000008",
       "academicAchevement": "翻译作品已出版，翻译学研究论文5篇。",
-      "homePageBk": "/resources/homepage/foreignlanguages2.jpg",
+      "homePageBk": "/assets/images/foreignlanguages2.jpg",
       "likes": 65,
       "resource": [
         {
           "type": "pdf",
           "headline": "翻译技巧与实践",
           "description": "翻译理论与技巧的总结与应用。",
-          "file": "/resources/translation_skills.pdf",
+          "file": "/assets/translation_skills.pdf",
           "category": "教材"
         },
         {
           "type": "png",
           "headline": "翻译过程图示",
           "description": "翻译过程的可视化分析图。",
-          "file": "/resources/translation_process.png",
+          "file": "/assets/translation_process.png",
           "category": "资料"
         }
       ],
@@ -262,27 +262,27 @@
       "department": "材料与化学工程学院",
       "email": "chenyi@materials.edu",
       "password": "Cy123456!",
-      "portrait": "/resources/portraits/chenyi.jpg",
+      "portrait": "/assets/images/chenyi.jpg",
       "individualResume": "陈一，材料与化学工程学院教授，专注于材料科学与纳米技术研究。",
       "education": "中南大学 材料科学博士",
       "researchField": "纳米材料",
       "telephone": "13800000009",
       "academicAchevement": "获得多个国家级科研奖项，发表论文30篇。",
-      "homePageBk": "/resources/homepage/materials.jpg",
+      "homePageBk": "/assets/images/materials.jpg",
       "likes": 95,
       "resource": [
         {
           "type": "pdf",
           "headline": "纳米材料导论",
           "description": "纳米材料的基础知识与应用。",
-          "file": "/resources/nanomaterials_intro.pdf",
+          "file": "/assets/nanomaterials_intro.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "纳米技术发展图",
           "description": "纳米技术的最新发展趋势。",
-          "file": "/resources/nano_tech_trends.jpg",
+          "file": "/assets/nano_tech_trends.jpg",
           "category": "研究报告"
         }
       ],
@@ -294,27 +294,27 @@
       "department": "材料与化学工程学院",
       "email": "liuer@materials.edu",
       "password": "Le123456!",
-      "portrait": "/resources/portraits/liuer.jpg",
+      "portrait": "/assets/images/liuer.jpg",
       "individualResume": "刘二，材料与化学工程学院讲师，专注于材料性能与环境友好材料。",
       "education": "西安交通大学 材料工程硕士",
       "researchField": "绿色材料",
       "telephone": "13800000010",
       "academicAchevement": "研究领域涉及绿色能源材料及其环境应用。",
-      "homePageBk": "/resources/homepage/materials2.jpg",
+      "homePageBk": "/assets/images/materials2.jpg",
       "likes": 70,
       "resource": [
         {
           "type": "pdf",
           "headline": "绿色材料技术",
           "description": "绿色材料的创新与应用。",
-          "file": "/resources/green_materials.pdf",
+          "file": "/assets/green_materials.pdf",
           "category": "研究论文"
         },
         {
           "type": "png",
           "headline": "绿色能源材料图",
           "description": "绿色能源材料的研究成果图。",
-          "file": "/resources/green_energy_material.png",
+          "file": "/assets/green_energy_material.png",
           "category": "研究数据"
         }
       ],
@@ -326,27 +326,27 @@
       "department": "机械电子工程学院",
       "email": "huangsan@mecheng.edu",
       "password": "Hs123456!",
-      "portrait": "/resources/portraits/huangsan.jpg",
+      "portrait": "/assets/images/huangsan.jpg",
       "individualResume": "黄三，机械电子工程学院教授，专注于智能制造与机器人技术。",
       "education": "哈尔滨工业大学 机械工程博士",
       "researchField": "机器人技术",
       "telephone": "13800000011",
       "academicAchevement": "在机器人领域的研究处于国内领先水平，发表论文50篇。",
-      "homePageBk": "/resources/homepage/mecheng.jpg",
+      "homePageBk": "/assets/images/mecheng.jpg",
       "likes": 120,
       "resource": [
         {
           "type": "pdf",
           "headline": "智能制造技术",
           "description": "智能制造与自动化生产的核心技术。",
-          "file": "/resources/smart_manufacturing.pdf",
+          "file": "/assets/smart_manufacturing.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "机器人应用图",
           "description": "机器人技术在工业中的应用图示。",
-          "file": "/resources/robot_application.jpg",
+          "file": "/assets/robot_application.jpg",
           "category": "技术资料"
         }
       ],
@@ -358,27 +358,27 @@
       "department": "机械电子工程学院",
       "email": "zhangsi@mecheng.edu",
       "password": "Zs123456!",
-      "portrait": "/resources/portraits/zhangsi.jpg",
+      "portrait": "/assets/images/zhangsi.jpg",
       "individualResume": "张四，机械电子工程学院讲师，研究方向为智能控制与系统优化。",
       "education": "北京理工大学 控制工程硕士",
       "researchField": "智能控制",
       "telephone": "13800000012",
       "academicAchevement": "从事智能控制系统的研究，发表论文8篇。",
-      "homePageBk": "/resources/homepage/mecheng2.jpg",
+      "homePageBk": "/assets/images/mecheng2.jpg",
       "likes": 63,
       "resource": [
         {
           "type": "pdf",
           "headline": "智能控制系统设计",
           "description": "智能控制系统的设计与优化方法。",
-          "file": "/resources/smart_control_system.pdf",
+          "file": "/assets/smart_control_system.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "控制系统优化流程图",
           "description": "控制系统优化的流程图与方法。",
-          "file": "/resources/control_optimization.jpg",
+          "file": "/assets/control_optimization.jpg",
           "category": "技术图表"
         }
       ],
@@ -390,27 +390,27 @@
       "department": "体育学院",
       "email": "wuwu@sports.edu",
       "password": "Ww123456!",
-      "portrait": "/resources/portraits/wuwu.jpg",
+      "portrait": "/assets/images/wuwu.jpg",
       "individualResume": "吴五，体育学院教授，研究方向为运动生理学与运动康复。",
       "education": "天津体育学院 运动医学博士",
       "researchField": "运动生理学",
       "telephone": "13800000013",
       "academicAchevement": "研究了运动员的生理适应性，发表论文10篇。",
-      "homePageBk": "/resources/homepage/sports.jpg",
+      "homePageBk": "/assets/images/sports.jpg",
       "likes": 80,
       "resource": [
         {
           "type": "pdf",
           "headline": "运动生理学基础",
           "description": "运动生理学的基本原理与实践应用。",
-          "file": "/resources/exercise_physiology.pdf",
+          "file": "/assets/exercise_physiology.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "运动员生理适应性图",
           "description": "运动员在训练中的生理适应过程图示。",
-          "file": "/resources/athlete_adaptation.jpg",
+          "file": "/assets/athlete_adaptation.jpg",
           "category": "研究图表"
         }
       ],
@@ -422,27 +422,27 @@
       "department": "体育学院",
       "email": "zhaoliu@sports.edu",
       "password": "Zl123456!",
-      "portrait": "/resources/portraits/zhaoliu.jpg",
+      "portrait": "/assets/images/zhaoliu.jpg",
       "individualResume": "赵六，体育学院讲师，专注于运动心理学与竞技体育。",
       "education": "北京体育大学 运动心理学硕士",
       "researchField": "运动心理学",
       "telephone": "13800000014",
       "academicAchevement": "研究运动员心理，发表论文5篇。",
-      "homePageBk": "/resources/homepage/sports2.jpg",
+      "homePageBk": "/assets/images/sports2.jpg",
       "likes": 54,
       "resource": [
         {
           "type": "pdf",
           "headline": "运动心理学概论",
           "description": "运动心理学的基础理论与实践应用。",
-          "file": "/resources/sports_psychology.pdf",
+          "file": "/assets/sports_psychology.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "竞技体育心理分析图",
           "description": "竞技体育中的心理分析图示。",
-          "file": "/resources/competitive_psychology.jpg",
+          "file": "/assets/competitive_psychology.jpg",
           "category": "研究资料"
         }
       ],
@@ -454,27 +454,27 @@
       "department": "艺术学院",
       "email": "chengziheng@art.edu",
       "password": "Czh123456!",
-      "portrait": "/resources/portraits/chengziheng.jpg",
+      "portrait": "/assets/images/chengziheng.jpg",
       "individualResume": "程子恒，艺术学院教授，专注于现代艺术与视觉传达设计。",
       "education": "中央美术学院 艺术设计博士",
       "researchField": "视觉艺术",
       "telephone": "13800000017",
       "academicAchevement": "在国内外艺术展览中屡获大奖，发表论文20篇。",
-      "homePageBk": "/resources/homepage/art.jpg",
+      "homePageBk": "/assets/images/art.jpg",
       "likes": 110,
       "resource": [
         {
           "type": "pdf",
           "headline": "现代艺术设计趋势",
           "description": "现代艺术与设计领域的发展趋势与创新。",
-          "file": "/resources/modern_art_design.pdf",
+          "file": "/assets/modern_art_design.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "视觉艺术作品展示",
           "description": "现代视觉艺术作品的展示与解析。",
-          "file": "/resources/visual_art_showcase.jpg",
+          "file": "/assets/visual_art_showcase.jpg",
           "category": "研究资料"
         }
       ],
@@ -486,27 +486,27 @@
       "department": "艺术学院",
       "email": "shenmanli@art.edu",
       "password": "Sml123456!",
-      "portrait": "/resources/portraits/shenmanli.jpg",
+      "portrait": "/assets/images/shenmanli.jpg",
       "individualResume": "沈曼丽，艺术学院讲师，研究领域为艺术教育与艺术创作。",
       "education": "广州美术学院 绘画硕士",
       "researchField": "艺术教育",
       "telephone": "13800000018",
       "academicAchevement": "出版艺术教育相关著作两本，发表论文15篇。",
-      "homePageBk": "/resources/homepage/art2.jpg",
+      "homePageBk": "/assets/images/art2.jpg",
       "likes": 65,
       "resource": [
         {
           "type": "pdf",
           "headline": "艺术教育理论与实践",
           "description": "艺术教育的核心理论与教学实践方法。",
-          "file": "/resources/art_education.pdf",
+          "file": "/assets/art_education.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "艺术创作方法论",
           "description": "艺术创作的理念与方法。",
-          "file": "/resources/art_creation.jpg",
+          "file": "/assets/art_creation.jpg",
           "category": "研究资料"
         }
       ],
@@ -518,27 +518,27 @@
       "department": "教育学院",
       "email": "weitianxiang@education.edu",
       "password": "Wtx123456!",
-      "portrait": "/resources/portraits/weitianxiang.jpg",
+      "portrait": "/assets/images/weitianxiang.jpg",
       "individualResume": "魏天翔，教育学院教授，研究方向为教育心理学与教育技术。",
       "education": "华东师范大学 教育学博士",
       "researchField": "教育心理学",
       "telephone": "13800000019",
       "academicAchevement": "出版教育心理学著作三本，发表论文40篇。",
-      "homePageBk": "/resources/homepage/education.jpg",
+      "homePageBk": "/assets/images/education.jpg",
       "likes": 125,
       "resource": [
         {
           "type": "pdf",
           "headline": "教育心理学原理",
           "description": "教育心理学的基本理论与教学实践。",
-          "file": "/resources/edu_psychology.pdf",
+          "file": "/assets/edu_psychology.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "教育心理学应用图",
           "description": "教育心理学在教育实践中的应用图示。",
-          "file": "/resources/edu_psychology_application.jpg",
+          "file": "/assets/edu_psychology_application.jpg",
           "category": "研究图表"
         }
       ],
@@ -550,27 +550,27 @@
       "department": "教育学院",
       "email": "duanlingsnow@education.edu",
       "password": "Dls123456!",
-      "portrait": "/resources/portraits/duanlingsnow.jpg",
+      "portrait": "/assets/images/duanlingsnow.jpg",
       "individualResume": "段凌雪，教育学院讲师，研究方向为在线教育与远程教学。",
       "education": "南京师范大学 教育技术硕士",
       "researchField": "在线教育",
       "telephone": "13800000020",
       "academicAchevement": "在教育技术领域获得奖项，发表论文15篇。",
-      "homePageBk": "/resources/homepage/education2.jpg",
+      "homePageBk": "/assets/images/education2.jpg",
       "likes": 90,
       "resource": [
         {
           "type": "pdf",
           "headline": "在线教育模式创新",
           "description": "在线教育的创新模式与发展方向。",
-          "file": "/resources/online_education_innovation.pdf",
+          "file": "/assets/online_education_innovation.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "远程教育案例分析",
           "description": "远程教育的案例研究与分析。",
-          "file": "/resources/remote_education_case.jpg",
+          "file": "/assets/remote_education_case.jpg",
           "category": "研究资料"
         }
       ],
@@ -582,27 +582,27 @@
       "department": "马克思主义学院",
       "email": "cairufeng@marxism.edu",
       "password": "Crf123456!",
-      "portrait": "/resources/portraits/cairufeng.jpg",
+      "portrait": "/assets/images/cairufeng.jpg",
       "individualResume": "蔡如风，马克思主义学院教授，专注于马克思主义理论与哲学。",
       "education": "复旦大学 哲学博士",
       "researchField": "马克思主义哲学",
       "telephone": "13800000021",
       "academicAchevement": "出版马克思主义理论相关书籍三本，发表论文25篇。",
-      "homePageBk": "/resources/homepage/marxism.jpg",
+      "homePageBk": "/assets/images/marxism.jpg",
       "likes": 135,
       "resource": [
         {
           "type": "pdf",
           "headline": "马克思主义哲学基础",
           "description": "马克思主义哲学的基本原理与历史发展。",
-          "file": "/resources/marxism_philosophy.pdf",
+          "file": "/assets/marxism_philosophy.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "哲学发展图示",
           "description": "马克思主义哲学的历史发展与影响图示。",
-          "file": "/resources/philosophy_development.jpg",
+          "file": "/assets/philosophy_development.jpg",
           "category": "研究图表"
         }
       ],
@@ -614,27 +614,27 @@
       "department": "马克思主义学院",
       "email": "zhuxuesong@marxism.edu",
       "password": "Zxs123456!",
-      "portrait": "/resources/portraits/zhuxuesong.jpg",
+      "portrait": "/assets/images/zhuxuesong.jpg",
       "individualResume": "朱雪松，马克思主义学院讲师，研究领域为社会学与文化批评。",
       "education": "北京大学 社会学硕士",
       "researchField": "社会学",
       "telephone": "13800000022",
       "academicAchevement": "在社会学与文化研究领域取得显著成果，发表论文10篇。",
-      "homePageBk": "/resources/homepage/marxism2.jpg",
+      "homePageBk": "/assets/images/marxism2.jpg",
       "likes": 85,
       "resource": [
         {
           "type": "pdf",
           "headline": "社会学导论",
           "description": "社会学的基础知识与基本理论。",
-          "file": "/resources/sociology_intro.pdf",
+          "file": "/assets/sociology_intro.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "社会发展理论图",
           "description": "社会发展的主要理论与趋势图示。",
-          "file": "/resources/social_development_theory.jpg",
+          "file": "/assets/social_development_theory.jpg",
           "category": "研究资料"
         }
       ],
@@ -646,27 +646,27 @@
       "department": "继续教育学院",
       "email": "ouyanghaotian@continuingedu.edu",
       "password": "Oht123456!",
-      "portrait": "/resources/portraits/ouyanghaotian.jpg",
+      "portrait": "/assets/images/ouyanghaotian.jpg",
       "individualResume": "欧阳昊天，继续教育学院教授，专注于成人教育与终身学习。",
       "education": "武汉大学 教育学博士",
       "researchField": "成人教育",
       "telephone": "13800000023",
       "academicAchevement": "成人教育领域的领先专家，发表相关论文35篇。",
-      "homePageBk": "/resources/homepage/continuingedu.jpg",
+      "homePageBk": "/assets/images/continuingedu.jpg",
       "likes": 145,
       "resource": [
         {
           "type": "pdf",
           "headline": "成人教育理论",
           "description": "成人教育的基本理论与实践。",
-          "file": "/resources/adult_education_theory.pdf",
+          "file": "/assets/adult_education_theory.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "终身学习概念图",
           "description": "终身学习的概念与重要性图示。",
-          "file": "/resources/lifelong_learning.jpg",
+          "file": "/assets/lifelong_learning.jpg",
           "category": "研究资料"
         }
       ],
@@ -678,27 +678,27 @@
       "department": "继续教育学院",
       "email": "dengminhui@continuingedu.edu",
       "password": "Dmh123456!",
-      "portrait": "/resources/portraits/dengminhui.jpg",
+      "portrait": "/assets/images/dengminhui.jpg",
       "individualResume": "邓敏慧，继续教育学院讲师，研究方向为在线学习与教育技术。",
       "education": "吉林大学 教育技术硕士",
       "researchField": "在线学习",
       "telephone": "13800000024",
       "academicAchevement": "在教育技术领域获得学术奖项，发表论文20篇。",
-      "homePageBk": "/resources/homepage/continuingedu2.jpg",
+      "homePageBk": "/assets/images/continuingedu2.jpg",
       "likes": 110,
       "resource": [
         {
           "type": "pdf",
           "headline": "在线学习平台设计",
           "description": "在线学习平台的设计与实施。",
-          "file": "/resources/online_learning_platform.pdf",
+          "file": "/assets/online_learning_platform.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "教育技术应用图",
           "description": "教育技术在教学中的应用与效果分析。",
-          "file": "/resources/edtech_application.jpg",
+          "file": "/assets/edtech_application.jpg",
           "category": "研究图表"
         }
       ],
@@ -710,27 +710,27 @@
       "department": "商学院",
       "email": "sunhaoran@business.edu",
       "password": "Shr123456!",
-      "portrait": "/resources/portraits/sunhaoran.jpg",
+      "portrait": "/assets/images/sunhaoran.jpg",
       "individualResume": "孙浩然，商学院副教授，研究方向为市场营销与企业管理。",
       "education": "北京大学 市场营销硕士",
       "researchField": "市场营销",
       "telephone": "13800000025",
       "academicAchevement": "发表多篇市场营销相关论文，拥有多项管理创新实践经验。",
-      "homePageBk": "/resources/homepage/business.jpg",
+      "homePageBk": "/assets/images/business.jpg",
       "likes": 120,
       "resource": [
         {
           "type": "pdf",
           "headline": "市场营销策略",
           "description": "市场营销的基本策略与实践。",
-          "file": "/resources/marketing_strategy.pdf",
+          "file": "/assets/marketing_strategy.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "营销流程图",
           "description": "市场营销过程的图示。",
-          "file": "/resources/marketing_flow.jpg",
+          "file": "/assets/marketing_flow.jpg",
           "category": "研究资料"
         }
       ],
@@ -742,27 +742,27 @@
       "department": "商学院",
       "email": "lixueqing@business.edu",
       "password": "Lxq123456!",
-      "portrait": "/resources/portraits/lixueqing.jpg",
+      "portrait": "/assets/images/lixueqing.jpg",
       "individualResume": "李雪晴，商学院讲师，专注于经济学与金融学。",
       "education": "复旦大学 经济学硕士",
       "researchField": "金融学",
       "telephone": "13800000026",
       "academicAchevement": "多篇金融学研究论文，深耕金融市场分析与投资策略。",
-      "homePageBk": "/resources/homepage/business2.jpg",
+      "homePageBk": "/assets/images/business2.jpg",
       "likes": 90,
       "resource": [
         {
           "type": "pdf",
           "headline": "金融市场分析",
           "description": "金融市场的基本理论与投资分析。",
-          "file": "/resources/financial_market_analysis.pdf",
+          "file": "/assets/financial_market_analysis.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "投资分析图表",
           "description": "投资市场趋势分析图。",
-          "file": "/resources/investment_analysis.jpg",
+          "file": "/assets/investment_analysis.jpg",
           "category": "研究资料"
         }
       ],
@@ -774,27 +774,27 @@
       "department": "人文与传媒学院",
       "email": "zhoumingjie@humanities.edu",
       "password": "Zmj123456!",
-      "portrait": "/resources/portraits/zhoumingjie.jpg",
+      "portrait": "/assets/images/zhoumingjie.jpg",
       "individualResume": "周明杰，人文与传媒学院教授，研究方向为传播学与新媒体。",
       "education": "南京大学 传播学博士",
       "researchField": "传播学",
       "telephone": "13800000027",
       "academicAchevement": "在国际传播学领域发表多篇重要论文，参与多个新媒体项目。",
-      "homePageBk": "/resources/homepage/humanities.jpg",
+      "homePageBk": "/assets/images/humanities.jpg",
       "likes": 140,
       "resource": [
         {
           "type": "pdf",
           "headline": "新媒体传播理论",
           "description": "新媒体时代传播学的理论与实践。",
-          "file": "/resources/new_media_communication.pdf",
+          "file": "/assets/new_media_communication.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "传播学发展图示",
           "description": "传播学在新媒体环境下的发展与变化。",
-          "file": "/resources/communication_theory.jpg",
+          "file": "/assets/communication_theory.jpg",
           "category": "研究资料"
         }
       ],
@@ -806,27 +806,27 @@
       "department": "人文与传媒学院",
       "email": "wangjiali@humanities.edu",
       "password": "Wjl123456!",
-      "portrait": "/resources/portraits/wangjiali.jpg",
+      "portrait": "/assets/images/wangjiali.jpg",
       "individualResume": "王佳丽，人文与传媒学院讲师，专注于社会学与文化研究。",
       "education": "浙江大学 社会学硕士",
       "researchField": "文化研究",
       "telephone": "13800000028",
       "academicAchevement": "专注于社会学理论与文化现象研究，发表多篇论文。",
-      "homePageBk": "/resources/homepage/humanities2.jpg",
+      "homePageBk": "/assets/images/humanities2.jpg",
       "likes": 100,
       "resource": [
         {
           "type": "pdf",
           "headline": "社会学研究方法",
           "description": "社会学研究的基本方法与技巧。",
-          "file": "/resources/sociology_research.pdf",
+          "file": "/assets/sociology_research.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "文化现象分析图",
           "description": "文化现象分析与社会影响图。",
-          "file": "/resources/cultural_analysis.jpg",
+          "file": "/assets/cultural_analysis.jpg",
           "category": "研究资料"
         }
       ],
@@ -838,27 +838,27 @@
       "department": "工程与管理学院",
       "email": "chengsiyuan@engineering.edu",
       "password": "Csy123456!",
-      "portrait": "/resources/portraits/chengsiyuan.jpg",
+      "portrait": "/assets/images/chengsiyuan.jpg",
       "individualResume": "程思远，工程与管理学院副教授，专注于工程管理与项目管理。",
       "education": "清华大学 工程管理博士",
       "researchField": "工程管理",
       "telephone": "13800000029",
       "academicAchevement": "研究项目管理流程及风险评估方法，出版多篇相关论文。",
-      "homePageBk": "/resources/homepage/engineering.jpg",
+      "homePageBk": "/assets/images/engineering.jpg",
       "likes": 115,
       "resource": [
         {
           "type": "pdf",
           "headline": "工程项目管理",
           "description": "工程项目管理的基础知识与流程。",
-          "file": "/resources/project_management.pdf",
+          "file": "/assets/project_management.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "项目风险评估图",
           "description": "工程项目中的风险评估流程与方法。",
-          "file": "/resources/project_risk_assessment.jpg",
+          "file": "/assets/project_risk_assessment.jpg",
           "category": "研究资料"
         }
       ],
@@ -870,27 +870,27 @@
       "department": "工程与管理学院",
       "email": "liupengfei@engineering.edu",
       "password": "Lpf123456!",
-      "portrait": "/resources/portraits/liupengfei.jpg",
+      "portrait": "/assets/images/liupengfei.jpg",
       "individualResume": "刘鹏飞，工程与管理学院讲师，专注于智能制造与自动化技术。",
       "education": "北京理工大学 自动化硕士",
       "researchField": "自动化技术",
       "telephone": "13800000030",
       "academicAchevement": "在智能制造与机器人领域发表多篇论文，参与多个科研项目。",
-      "homePageBk": "/resources/homepage/engineering2.jpg",
+      "homePageBk": "/assets/images/engineering2.jpg",
       "likes": 105,
       "resource": [
         {
           "type": "pdf",
           "headline": "智能制造技术",
           "description": "智能制造技术的最新发展与应用。",
-          "file": "/resources/smart_manufacturing.pdf",
+          "file": "/assets/smart_manufacturing.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "机器人应用示意图",
           "description": "机器人技术在智能制造中的应用图示。",
-          "file": "/resources/robotics_application.jpg",
+          "file": "/assets/robotics_application.jpg",
           "category": "研究资料"
         }
       ],
@@ -902,27 +902,27 @@
       "department": "外国语学院",
       "email": "jianghuilin@foreignlanguages.edu",
       "password": "Jhl123456!",
-      "portrait": "/resources/portraits/jianghuilin.jpg",
+      "portrait": "/assets/images/jianghuilin.jpg",
       "individualResume": "蒋慧琳，外国语学院教授，研究方向为翻译学与跨文化交流。",
       "education": "上海外国语大学 翻译学博士",
       "researchField": "翻译学",
       "telephone": "13800000031",
       "academicAchevement": "出版翻译学著作两本，发表跨文化交流相关论文。",
-      "homePageBk": "/resources/homepage/foreignlanguages.jpg",
+      "homePageBk": "/assets/images/foreignlanguages.jpg",
       "likes": 130,
       "resource": [
         {
           "type": "pdf",
           "headline": "翻译学理论",
           "description": "翻译学的基本理论与实践。",
-          "file": "/resources/translation_theory.pdf",
+          "file": "/assets/translation_theory.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "跨文化交流模型",
           "description": "跨文化交流的不同模型与方法。",
-          "file": "/resources/cross_cultural_communication.jpg",
+          "file": "/assets/cross_cultural_communication.jpg",
           "category": "研究资料"
         }
       ],
@@ -934,27 +934,27 @@
       "department": "外国语学院",
       "email": "zhaoyaqian@foreignlanguages.edu",
       "password": "Zyq123456!",
-      "portrait": "/resources/portraits/zhaoyaqian.jpg",
+      "portrait": "/assets/images/zhaoyaqian.jpg",
       "individualResume": "赵雅倩，外国语学院讲师，专注于英语教学与语言学研究。",
       "education": "广东外语外贸大学 英语学硕士",
       "researchField": "语言学",
       "telephone": "13800000032",
       "academicAchevement": "研究语言教学方法，发布语言学相关论文。",
-      "homePageBk": "/resources/homepage/foreignlanguages2.jpg",
+      "homePageBk": "/assets/images/foreignlanguages2.jpg",
       "likes": 110,
       "resource": [
         {
           "type": "pdf",
           "headline": "英语教学法",
           "description": "英语教学法与教学设计。",
-          "file": "/resources/english_teaching_methods.pdf",
+          "file": "/assets/english_teaching_methods.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "语言学研究框架",
           "description": "语言学的理论框架与实践。",
-          "file": "/resources/linguistics_framework.jpg",
+          "file": "/assets/linguistics_framework.jpg",
           "category": "研究资料"
         }
       ],
@@ -966,27 +966,27 @@
       "department": "材料与化学工程学院",
       "email": "zhouyuhang@materials.edu",
       "password": "Zyh123456!",
-      "portrait": "/resources/portraits/zhouyuhang.jpg",
+      "portrait": "/assets/images/zhouyuhang.jpg",
       "individualResume": "周宇航，材料与化学工程学院教授，研究方向为材料科学与纳米技术。",
       "education": "中国科学院大学 材料科学博士",
       "researchField": "纳米技术",
       "telephone": "13800000033",
       "academicAchevement": "在纳米材料领域取得多项技术专利，参与多个国际科研项目。",
-      "homePageBk": "/resources/homepage/materials.jpg",
+      "homePageBk": "/assets/images/materials.jpg",
       "likes": 150,
       "resource": [
         {
           "type": "pdf",
           "headline": "纳米技术基础",
           "description": "纳米材料的基本理论与应用。",
-          "file": "/resources/nanotechnology_basics.pdf",
+          "file": "/assets/nanotechnology_basics.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "纳米材料结构",
           "description": "纳米材料的结构与特性图示。",
-          "file": "/resources/nanomaterials_structure.jpg",
+          "file": "/assets/nanomaterials_structure.jpg",
           "category": "研究资料"
         }
       ],
@@ -998,27 +998,27 @@
       "department": "材料与化学工程学院",
       "email": "hanjie@materials.edu",
       "password": "Hj123456!",
-      "portrait": "/resources/portraits/hanjie.jpg",
+      "portrait": "/assets/images/hanjie.jpg",
       "individualResume": "韩杰，材料与化学工程学院讲师，研究方向为高分子材料与化学工程。",
       "education": "哈尔滨工业大学 高分子材料硕士",
       "researchField": "高分子材料",
       "telephone": "13800000034",
       "academicAchevement": "研究高分子材料的应用，发表相关论文与专利。",
-      "homePageBk": "/resources/homepage/materials2.jpg",
+      "homePageBk": "/assets/images/materials2.jpg",
       "likes": 125,
       "resource": [
         {
           "type": "pdf",
           "headline": "高分子材料导论",
           "description": "高分子材料的基本性质与应用。",
-          "file": "/resources/polymer_materials_introduction.pdf",
+          "file": "/assets/polymer_materials_introduction.pdf",
           "category": "教材"
         },
         {
           "type": "jpg",
           "headline": "高分子材料结构示意图",
           "description": "高分子材料的分子结构与应用图。",
-          "file": "/resources/polymer_materials_structure.jpg",
+          "file": "/assets/polymer_materials_structure.jpg",
           "category": "研究资料"
         }
       ],

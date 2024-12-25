@@ -7,17 +7,20 @@ import HomePage, {
   loader as homePageLoader,
 } from "./component/homepage/HomePage";
 import Person, { loader as personLoader } from "./component/person/Person";
-import SchoolProfile, {
-  loader as schoolProfileLoader,
-} from "./component/schoolProfile/SchoolProfile";
-import Teacher, { loader as teacherLoader } from "./component/teacher/Teacher";
 import Register, {
   loader as registerLoader,
 } from "./component/register/Register";
+import InstitutionList, {
+  loader as institutionListLoader,
+} from "./component/institution/InstitutionList";
 import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";
 import ProgressDialog from "./component/common/ProgressDialog";
+import src, { loader as srcLoader } from "./component/src/src";
+import TeacherDetail, {
+  loader as teacherDetailLoader,
+} from "./component/institution/TeacherDetail";
 
 /**
  * 错误展示
@@ -65,18 +68,25 @@ const router = createBrowserRouter([
             element: <HomePage />,
             loader: homePageLoader,
           },
-          // 教师
+          // 学院
           {
-            path: "/teacher",
-            element: <Teacher />,
-            loader: teacherLoader,
+            path: "/institution",
+            element: <InstitutionList />,
+            loader: institutionListLoader,
           },
-          // 学校概述
           {
-            path: "/schoolProfile",
-            element: <SchoolProfile />,
-            loader: schoolProfileLoader,
+            path: "/institution/:institutionId",
+            element: <src />,
+            loader: srcLoader,
+            children: [
+              {
+                path: "teacher/:teacherId",
+                element: <TeacherDetail />,
+                loader: teacherDetailLoader,
+              },
+            ],
           },
+
           // 个人信息
           {
             path: "/person",
@@ -103,8 +113,6 @@ const router = createBrowserRouter([
  * 单页应用，获取主页面的 body
  */
 const pxxy = createRoot(document.getElementById("pxxy"));
-
-console.log("pxxy");
 
 /**
  * 根据路由渲染

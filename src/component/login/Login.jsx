@@ -2,8 +2,9 @@ import React from "react";
 
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import { EditTextField, ColumnFlexBoxAC } from "../common/Common";
+import { EditTextField, ColumnFlexBoxAC, RowFlexBoxAS } from "../common/Common";
 import Card from "@mui/material/Card";
+import { Link } from "react-router-dom";
 
 /**
  * 登录的 loader
@@ -13,6 +14,7 @@ export async function loader() {
 }
 
 export default function Login() {
+  console.log(document.documentElement.scrollTop);
   return (
     <Box
       sx={{
@@ -117,6 +119,11 @@ export default function Login() {
             >
               登录
             </Button>
+            <RowFlexBoxAS marginTop={2}>
+              <Link to={"/register"}>
+                <Typography>没有账户？</Typography>
+              </Link>
+            </RowFlexBoxAS>
           </form>
         </Card>
       </Box>

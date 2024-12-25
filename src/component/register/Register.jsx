@@ -2,8 +2,9 @@ import React from "react";
 
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import { EditTextField } from "../common/Common";
+import { EditTextField, RowFlexBoxAS } from "../common/Common";
 import Card from "@mui/material/Card";
+import { Link } from "react-router-dom";
 
 /**
  * 注册的 loader
@@ -137,6 +138,11 @@ export default function Register() {
             >
               注册
             </Button>
+            <RowFlexBoxAS marginTop={2}>
+              <Link to={"/login"}>
+                <Typography>已有账户？</Typography>
+              </Link>
+            </RowFlexBoxAS>
           </form>
         </Card>
       </Box>
