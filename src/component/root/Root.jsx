@@ -17,7 +17,7 @@ export default function Root() {
         flexDirection: "column",
         height: `calc(100vh)`,
         width: "100%",
-        backgroundImage: `url(/assets/backgroundImage.jpg)`,
+        backgroundImage: `url(/assets/images/backgroundImage.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

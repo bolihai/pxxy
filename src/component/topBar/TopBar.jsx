@@ -18,14 +18,13 @@ const buttonStyles = (isActive) => ({
   },
 });
 const Items = [
-  { label: "首页", to: "/homepage" },
-  { label: "学校概况", to: "/schoolProfile" },
+  { label: "首页", to: "/" },
   { label: "论坛", to: "/forum" },
   { label: "教师", to: "/teacher" },
   { label: "个人", to: "/person" },
 ];
 export default function TopBar() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive] = useState(false);
   const isMaxScreenWidth = useMediaQuery("(max-width: 920px)");
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -60,7 +59,7 @@ export default function TopBar() {
           >
             <a href="https://www.pxc.jx.cn">
               <img
-                src="images/apple-touch-icon.png"
+                src="/assets/images/apple-touch-icon.png"
                 alt="Icon"
                 style={{ width: "70px", height: "70px" }}
               />
@@ -74,7 +73,7 @@ export default function TopBar() {
               }}
             >
               <img
-                src="/assets/school.png"
+                src="/assets/images/school.png"
                 style={{ width: "120px", height: "60px" }}
               />
             </Box>

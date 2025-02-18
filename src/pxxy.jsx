@@ -61,7 +61,7 @@ const router = createBrowserRouter([
           // 主页
           {
             index: true,
-            path: "/homepage",
+            path: "/",
             element: <HomePage />,
             loader: homePageLoader,
           },
