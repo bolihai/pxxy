@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { EditTextField, ColumnFlexBoxAC } from "../common/Common";
 import Card from "@mui/material/Card";
+import { Link } from "react-router-dom";
 
 /**
  * 登录的 loader
@@ -105,18 +106,30 @@ export default function Login() {
                 mb: 5,
               }}
             />
-
-            <Button
-              variant="contained"
+            <Box
               sx={{
-                backgroundColor: "#862617",
-                "&:hover": {
-                  backgroundColor: "rgba(134, 38, 23, 0.8)",
-                },
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                marginLeft: 5,
+                gap: 2,
               }}
             >
-              登录
-            </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#862617",
+                  "&:hover": {
+                    backgroundColor: "rgba(134, 38, 23, 0.8)",
+                  },
+                }}
+              >
+                登录
+              </Button>
+              <Link to="/register">没有账户？</Link>
+            </Box>
           </form>
         </Card>
       </Box>

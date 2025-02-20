@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import { EditTextField } from "../common/Common";
 import Card from "@mui/material/Card";
+import { Link } from "react-router-dom";
 
 /**
  * 注册的 loader
@@ -126,17 +127,30 @@ export default function Register() {
               }}
             />
 
-            <Button
-              variant="contained"
+            <Box
               sx={{
-                backgroundColor: "#862617",
-                "&:hover": {
-                  backgroundColor: "rgba(134, 38, 23, 0.8)",
-                },
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                marginLeft: 5,
+                gap: 2,
               }}
             >
-              注册
-            </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#862617",
+                  "&:hover": {
+                    backgroundColor: "rgba(134, 38, 23, 0.8)",
+                  },
+                }}
+              >
+                注册
+              </Button>
+              <Link to="/login">已有账户？</Link>
+            </Box>
           </form>
         </Card>
       </Box>
