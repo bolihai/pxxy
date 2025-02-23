@@ -19,8 +19,8 @@ const buttonStyles = (isActive) => ({
 });
 const Items = [
   { label: "首页", to: "/" },
-  { label: "论坛", to: "/forum" },
-  { label: "教师", to: "/teacher" },
+  // { label: "论坛", to: "/forum" },
+  { label: "教师", to: "/academy" },
   { label: "个人", to: "/person" },
 ];
 export default function TopBar() {
@@ -124,6 +124,7 @@ export default function TopBar() {
               alignItems: "flex-end",
               flexDirection: "row",
               pl: "450px",
+              marginLeft: 60,
             }}
           >
             {Items.map((item) => (

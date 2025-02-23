@@ -10,7 +10,6 @@ import Person, { loader as personLoader } from "./component/person/Person";
 import SchoolProfile, {
   loader as schoolProfileLoader,
 } from "./component/schoolProfile/SchoolProfile";
-import Teacher, { loader as teacherLoader } from "./component/teacher/Teacher";
 import Register, {
   loader as registerLoader,
 } from "./component/register/Register";
@@ -18,6 +17,10 @@ import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";
 import ProgressDialog from "./component/common/ProgressDialog";
+import Academy, { loader as AcademyLoader } from "./component/teacher/Academy";
+import AcademyDetail, {
+  loader as AcademyDetailLoader,
+} from "./component/teacher/AcademyDetail";
 
 /**
  * 错误展示
@@ -67,9 +70,16 @@ const router = createBrowserRouter([
           },
           // 教师
           {
-            path: "/teacher",
-            element: <Teacher />,
-            loader: teacherLoader,
+            path: "/academy",
+            element: <Academy />,
+            loader: AcademyLoader,
+            children: [
+              {
+                path: ":collegeName",
+                element: <AcademyDetail />,
+                loader: AcademyDetailLoader,
+              },
+            ],
           },
           // 学校概述
           {

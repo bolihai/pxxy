@@ -26,6 +26,9 @@ mongoose
     process.exit(1);
   });
 
+// 挂载老师路由
+app.use("/server/teacher", require("./src/server/teacher"));
+
 /**
  * 根据路径返回对应的页面
  */
