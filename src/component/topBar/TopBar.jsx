@@ -22,6 +22,7 @@ const Items = [
   // { label: "论坛", to: "/forum" },
   { label: "教师", to: "/academy" },
   { label: "个人", to: "/person" },
+  { label: "学校概况", to: "/schoolProfile" },
 ];
 export default function TopBar() {
   const [isActive] = useState(false);

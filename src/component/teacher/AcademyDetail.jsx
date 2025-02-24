@@ -1,13 +1,14 @@
 import React from "react";
 import { Typography, Box, List, ListItem, ListItemText } from "@mui/material";
-import { useLoaderData } from "react-router-dom";
 import axios from "axios";
+import { useLoaderData } from "react-router-dom";
 
 export async function loader({ params }) {
   const collegeName = params.collegeName;
   try {
     const response = await axios.get(`/server/teacher/${collegeName}`);
-    return { teachers: response.data };
+    console.log(response.data);
+    return { teachers: response.data, error: null };
   } catch (error) {
     return { error: "获取数据失败，请稍后再试。" };
   }
@@ -17,9 +18,9 @@ export default function AcademyDetail() {
   const { teachers, error } = useLoaderData();
   console.log(teachers);
 
-  if (error) {
-    return <Typography>{error}</Typography>;
-  }
+  // if (error) {
+  //   return <Typography>{error}</Typography>;
+  // }
 
   return (
     <Box sx={{ padding: 4 }}>

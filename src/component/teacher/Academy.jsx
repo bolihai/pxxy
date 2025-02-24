@@ -8,7 +8,7 @@ import {
   CardActionArea,
 } from "@mui/material";
 import axios from "axios";
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 
 /**
  * 教师页面的 loader
