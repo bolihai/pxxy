@@ -1,79 +1,46 @@
-/**
- * Root component
- * @module Root
- */
-
-import React, { useState } from "react";
-import { Box, Typography, Button } from "@mui/material";
-import { useMediaQuery } from "@mui/material";
-import Slider from "react-slick";
+import {
+  Autocomplete,
+  Box,
+  Card,
+  CardMedia,
+  TextField,
+  Typography,
+  Grid,
+} from "@mui/material";
+import axios from "axios";
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Carousel from "react-material-ui-carousel";
 
 /**
  * 主页的 loader
  */
 export async function loader() {
-  return {};
+  try {
+    const response = await axios.get("/server/teacher");
+    return { teachers: response.data };
+  } catch (error) {
+    return { error: "获取数据失败，请稍后再试。" };
+  }
 }
 
 export default function HomePage() {
-  const carouselItems = [
-    { name: "林一", image: "/assets/images/example.jpg" },
-    { name: "彭二", image: "/assets/images/example2.jpg" },
-    { name: "张三", image: "/assets/images/example3.jpg" },
-    { name: "李四", image: "/assets/images/example4.jpg" },
-    { name: "王五", image: "/assets/images/example5.jpg" },
-    { name: "赵六", image: "/assets/images/example6.jpg" },
-    { name: "钱七", image: "/assets/images/example.jpg" },
-    { name: "孙八", image: "/assets/images/example2.jpg" },
-    { name: "周九", image: "/assets/images/example3.jpg" },
-    { name: "吴十", image: "/assets/images/example4.jpg" },
-  ];
+  const { teachers, error } = useLoaderData();
+  const extractedData = teachers.map((item) => ({
+    fullName: item.fullName,
+    gender: item.gender,
+    department: item.department,
+    label: `${item.fullName} ${item.gender} ${item.department}`,
+  }));
 
-  const arrowStyle = {
-    position: "absolute",
-    top: "50%",
-    transform: "translateY(-50%)",
-    background: "#862617",
-    padding: "10px",
-    cursor: "pointer",
-    zIndex: 1,
-    borderRadius: "50%",
-  };
-  const Arrow = ({ className, onClick, icon }) => (
-    <div className={className} style={{ ...arrowStyle }} onClick={onClick}>
-      {icon}
-    </div>
-  );
-  const NextArrow = (props) => <Arrow {...props} icon="❯" />;
-  const PrevArrow = (props) => <Arrow {...props} icon="❮" />;
+  const carouselItems = teachers.map((teacher) => ({
+    src: teacher.src,
+    alt: teacher.fullName,
+    title: teacher.fullName,
+    description: `${teacher.gender}, ${teacher.department}`,
+  }));
 
-  const settings = {
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-  };
-
-  const [searchKeyword, setSearchKeyword] = useState("");
-  const isMaxScreenWidth = useMediaQuery("(max-width: 860px)");
-  const isMidScreenWidth = useMediaQuery("(max-width: 1260px)");
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const keyword = e.target.elements.keyword.value.toLowerCase();
-    const filtered = items.filter((item) =>
-      item.title.toLowerCase().includes(keyword)
-    );
-    setFilteredItems(filtered);
-  };
-  const handleLetterClick = (letter) => {
-    const filtered = items.filter(
-      (item) => item.title[0].toLowerCase() === letter.toLowerCase()
-    );
-    setFilteredItems(filtered);
-  };
+  carouselItems.push({ ...carouselItems[0] });
 
   return (
     <Box
@@ -81,160 +48,93 @@ export default function HomePage() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        padding: "20px",
+        justifyContent: "center",
+        marginTop: 10,
       }}
     >
-      {/* SearchSection */}
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          mb: "20px",
-          width: isMaxScreenWidth ? "75%" : "60%",
-        }}
-      >
-        <input
-          type="text"
-          placeholder="请输入姓名/专业/学科/关键字查询"
-          name="keyword"
-          value={searchKeyword}
-          onChange={(e) => setSearchKeyword(e.target.value)}
-          style={{
-            padding: "20px",
-            borderRadius: "0px",
-            fontSize: "16px",
-            outline: "none",
-            border: "1px solid #ccc",
-            flex: 1,
-          }}
-        />
-        <button
-          type="button"
-          onClick={handleSearch}
-          style={{
-            backgroundColor: "#862617",
-            color: "white",
-            padding: "20px",
-            border: "none",
-            borderRadius: "0px",
-            cursor: "pointer",
-            fontSize: "16px",
-            width: "120px",
-            letterSpacing: "4px",
-          }}
-        >
-          搜索
-        </button>
-      </Box>
-
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: isMidScreenWidth ? "column" : "row",
-          justifyContent: "center",
-          alignItems: "center",
-          width: isMidScreenWidth ? "75%" : "62%",
-          padding: "10px",
-        }}
-      >
-        <Typography
+      <Autocomplete
+        disablePortal
+        options={extractedData}
+        sx={{ width: 600 }}
+        renderInput={(params) => (
+          <TextField {...params} label="可以搜索姓名/学院/性别" />
+        )}
+        getOptionLabel={(option) => option.label}
+      />
+      <Box marginTop={15} width="100%">
+        <Carousel
+          autoPlay
+          animation="slide"
+          interval={2000}
+          navButtonsAlwaysVisible
           sx={{
-            mb: isMaxScreenWidth ? "10px" : 0,
-            pr: isMaxScreenWidth ? 0 : "5px",
-            fontSize: "18px",
+            width: "100%",
+            maxWidth: 800,
+            margin: "20px auto",
           }}
         >
-          按首字母检索:
-        </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            flexWrap: isMidScreenWidth ? "wrap" : "nowrap",
-            justifyContent: "center",
-            gap: "4px",
-          }}
-        >
-          {[
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "H",
-            "I",
-            "J",
-            "K",
-            "L",
-            "M",
-            "N",
-            "O",
-            "P",
-            "Q",
-            "R",
-            "S",
-            "T",
-            "U",
-            "V",
-            "W",
-            "X",
-            "Y",
-            "Z",
-          ].map((letter) => (
-            <Button
-              key={letter}
-              onClick={() => handleLetterClick(letter)}
-              sx={{
-                color: "black",
-                padding: "2px 4px",
-                border: "none",
-                borderRadius: "0px",
-                fontSize: "18px",
-                minWidth: "20px",
-                height: "20px",
-                "&:hover": {
-                  backgroundColor: "#862617",
-                  color: "#fff",
-                },
-              }}
-            >
-              {letter}
-            </Button>
-          ))}
-        </Box>
-      </Box>
-
-      {/* Carousel Section */}
-      <Box
-        sx={{
-          width: "1360px",
-          marginTop: "90px",
-        }}
-      >
-        <Slider {...settings}>
           {carouselItems.map((item, index) => (
-            <Box
-              key={index}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                border: "none",
-              }}
-            >
-              <img
-                src={item.image}
-                alt={item.name}
-                style={{ width: "180px", height: "240px", margin: "auto" }}
-              />
-              <Typography sx={{ textAlign: "center", color: "#fff" }}>
-                {item.name}
-              </Typography>
+            <Box key={index} sx={{ position: "relative" }}>
+              <Grid container spacing={2}>
+                <Grid item xs={4}>
+                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                    <CardMedia
+                      component="img"
+                      height="300"
+                      image={item.src}
+                      sx={{ objectFit: "cover" }}
+                    />
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      sx={{ textAlign: "center", mt: 2 }}
+                    >
+                      {item.title}
+                    </Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={4}>
+                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                    <CardMedia
+                      component="img"
+                      height="300"
+                      image={
+                        carouselItems[(index + 1) % carouselItems.length].src
+                      }
+                      sx={{ objectFit: "cover" }}
+                    />
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      sx={{ textAlign: "center", mt: 2 }}
+                    >
+                      {carouselItems[(index + 1) % carouselItems.length].title}
+                    </Typography>
+                  </Card>
+                </Grid>
+                <Grid item xs={4}>
+                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                    <CardMedia
+                      component="img"
+                      height="300"
+                      image={
+                        carouselItems[(index + 2) % carouselItems.length].src
+                      }
+                      sx={{ objectFit: "cover" }}
+                    />
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      sx={{ textAlign: "center", mt: 2 }}
+                    >
+                      {carouselItems[(index + 2) % carouselItems.length].title}
+                    </Typography>
+                  </Card>
+                </Grid>
+              </Grid>
             </Box>
           ))}
-        </Slider>
+        </Carousel>
       </Box>
     </Box>
   );
