@@ -81,6 +81,12 @@ const router = createBrowserRouter([
               },
             ],
           },
+          // 跳转人员
+          {
+            path: "/person/:fullName",
+            element: <Person />,
+            loader: personLoader,
+          },
           // 学校概述
           {
             path: "/schoolProfile",
@@ -119,8 +125,4 @@ console.log("pxxy");
 /**
  * 根据路由渲染
  */
-pxxy.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+pxxy.render(<RouterProvider router={router} />);

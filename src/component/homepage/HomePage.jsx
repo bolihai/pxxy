@@ -1,3 +1,5 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Autocomplete,
   Box,
@@ -8,13 +10,9 @@ import {
   Grid,
 } from "@mui/material";
 import axios from "axios";
-import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Carousel from "react-material-ui-carousel";
 
-/**
- * 主页的 loader
- */
 export async function loader() {
   try {
     const response = await axios.get("/server/teacher");
@@ -25,6 +23,7 @@ export async function loader() {
 }
 
 export default function HomePage() {
+  const navigate = useNavigate();
   const { teachers, error } = useLoaderData();
   const extractedData = teachers.map((item) => ({
     fullName: item.fullName,
@@ -41,6 +40,10 @@ export default function HomePage() {
   }));
 
   carouselItems.push({ ...carouselItems[0] });
+
+  const handlePersonClick = (personId) => {
+    navigate(`/person/${personId}`);
+  };
 
   return (
     <Box
@@ -60,6 +63,15 @@ export default function HomePage() {
           <TextField {...params} label="可以搜索姓名/学院/性别" />
         )}
         getOptionLabel={(option) => option.label}
+        renderOption={(props, option) => (
+          <Box
+            component="li"
+            {...props}
+            onClick={() => handlePersonClick(option.fullName)}
+          >
+            {option.label}
+          </Box>
+        )}
       />
       <Box marginTop={15} width="100%">
         <Carousel
@@ -77,7 +89,10 @@ export default function HomePage() {
             <Box key={index} sx={{ position: "relative" }}>
               <Grid container spacing={2}>
                 <Grid item xs={4}>
-                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                  <Card
+                    sx={{ maxWidth: 250, margin: "auto" }}
+                    onClick={() => handlePersonClick(item.title)}
+                  >
                     <CardMedia
                       component="img"
                       height="300"
@@ -94,7 +109,14 @@ export default function HomePage() {
                   </Card>
                 </Grid>
                 <Grid item xs={4}>
-                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                  <Card
+                    sx={{ maxWidth: 250, margin: "auto" }}
+                    onClick={() =>
+                      handlePersonClick(
+                        carouselItems[(index + 1) % carouselItems.length].title
+                      )
+                    } // 添加点击事件
+                  >
                     <CardMedia
                       component="img"
                       height="300"
@@ -113,7 +135,14 @@ export default function HomePage() {
                   </Card>
                 </Grid>
                 <Grid item xs={4}>
-                  <Card sx={{ maxWidth: 250, margin: "auto" }}>
+                  <Card
+                    sx={{ maxWidth: 250, margin: "auto" }}
+                    onClick={() =>
+                      handlePersonClick(
+                        carouselItems[(index + 2) % carouselItems.length].title
+                      )
+                    }
+                  >
                     <CardMedia
                       component="img"
                       height="300"

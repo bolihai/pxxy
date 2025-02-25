@@ -29,4 +29,21 @@ router.get("/:collegeName", async (req, res) => {
   }
 });
 
+// 根据用户名获取人员
+router.get("/byName/:fullName", async (req, res) => {
+  const fullName = req.params.fullName;
+  try {
+    const teacher = await UserSchema.UserSchema.find({
+      fullName: fullName,
+    });
+    console.log(teacher);
+    if (teacher.length === 0) {
+      return res.status(404).json({ message: "未找到该学院的教师" });
+    }
+    res.json(teacher);
+  } catch (error) {
+    res.status(500).json({ message: "获取数据失败", error: error.message });
+  }
+});
+
 module.exports = router;

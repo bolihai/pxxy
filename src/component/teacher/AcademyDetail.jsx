@@ -7,15 +7,15 @@ export async function loader({ params }) {
   const collegeName = params.collegeName;
   try {
     const response = await axios.get(`/server/teacher/${collegeName}`);
-    console.log(response.data);
-    return { teachers: response.data, error: null };
+    return response.data;
   } catch (error) {
-    return { error: "获取数据失败，请稍后再试。" };
+    console.log("出错了");
+    return null;
   }
 }
 
 export default function AcademyDetail() {
-  const { teachers, error } = useLoaderData();
+  const { teachers } = useLoaderData();
   console.log(teachers);
 
   // if (error) {
