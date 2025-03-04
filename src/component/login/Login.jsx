@@ -1,10 +1,17 @@
 import React from "react";
-
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+<<<<<<< HEAD
 import { EditTextField, ColumnFlexBoxAC, RowFlexBoxAS } from "../common/Common";
 import Card from "@mui/material/Card";
 import { Link } from "react-router-dom";
+=======
+import IconButton from "@mui/material/IconButton";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { EditTextField, ColumnFlexBoxAC } from "../common/Common";
+import Card from "@mui/material/Card";
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> loginAndLogout
 
 /**
  * 登录的 loader
@@ -14,7 +21,12 @@ export async function loader() {
 }
 
 export default function Login() {
+<<<<<<< HEAD
   console.log(document.documentElement.scrollTop);
+=======
+  const navigate = useNavigate(); // 使用 useNavigate 钩子
+
+>>>>>>> loginAndLogout
   return (
     <Box
       sx={{
@@ -32,7 +44,7 @@ export default function Login() {
           width: 1000,
           textAlign: "center",
           flexDirection: "row",
-          display: " flex",
+          display: "flex",
         }}
       >
         <a href="https://www.pxc.jx.cn">
@@ -76,8 +88,23 @@ export default function Login() {
             alignContent: "center",
             alignItems: "center",
             backgroundColor: "rgba(255, 255, 255, 0.8)",
+            position: "relative",
           }}
         >
+          <IconButton
+            onClick={() => navigate(-1)}
+            sx={{
+              position: "absolute",
+              top: 16,
+              left: 16,
+              color: "#862617",
+              "&:hover": {
+                color: "rgba(134, 38, 23, 0.8)",
+              },
+            }}
+          >
+            <ArrowBackIcon />
+          </IconButton>
           <Typography variant="h4">登录</Typography>
           <form
             style={{
@@ -107,16 +134,18 @@ export default function Login() {
                 mb: 5,
               }}
             />
-
-            <Button
-              variant="contained"
+            <Box
               sx={{
-                backgroundColor: "#862617",
-                "&:hover": {
-                  backgroundColor: "rgba(134, 38, 23, 0.8)",
-                },
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                marginLeft: 5,
+                gap: 2,
               }}
             >
+<<<<<<< HEAD
               登录
             </Button>
             <RowFlexBoxAS marginTop={2}>
@@ -124,6 +153,21 @@ export default function Login() {
                 <Typography>没有账户？</Typography>
               </Link>
             </RowFlexBoxAS>
+=======
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#862617",
+                  "&:hover": {
+                    backgroundColor: "rgba(134, 38, 23, 0.8)",
+                  },
+                }}
+              >
+                登录
+              </Button>
+              <Link to="/register">没有账户？</Link>
+            </Box>
+>>>>>>> loginAndLogout
           </form>
         </Card>
       </Box>

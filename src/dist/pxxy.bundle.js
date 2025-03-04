@@ -9,6 +9,7 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+<<<<<<< HEAD
 /***/ "./node_modules/@emotion/cache/dist/emotion-cache.browser.development.esm.js":
 /*!***********************************************************************************!*\
   !*** ./node_modules/@emotion/cache/dist/emotion-cache.browser.development.esm.js ***!
@@ -2627,12 +2628,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+=======
+>>>>>>> loginAndLogout
 /***/ "./src/pxxy.jsx":
 /*!**********************!*\
   !*** ./src/pxxy.jsx ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
+<<<<<<< HEAD
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-router-dom */ \"./node_modules/react-router-dom/dist/index.js\");\n/* harmony import */ var _component_login_Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./component/login/Login */ \"./src/component/login/Login.jsx\");\n/* harmony import */ var _component_forum_Forum__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/forum/Forum */ \"./src/component/forum/Forum.jsx\");\n/* harmony import */ var _component_homepage_HomePage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./component/homepage/HomePage */ \"./src/component/homepage/HomePage.jsx\");\n/* harmony import */ var _component_person_Person__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/person/Person */ \"./src/component/person/Person.jsx\");\n/* harmony import */ var _component_register_Register__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/register/Register */ \"./src/component/register/Register.jsx\");\n/* harmony import */ var _component_institution_InstitutionList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/institution/InstitutionList */ \"./src/component/institution/InstitutionList.jsx\");\n/* harmony import */ var _component_root_Root__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/root/Root */ \"./src/component/root/Root.jsx\");\n/* harmony import */ var _component_error_RootError__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./component/error/RootError */ \"./src/component/error/RootError.jsx\");\n/* harmony import */ var _component_error_Error__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./component/error/Error */ \"./src/component/error/Error.jsx\");\n/* harmony import */ var _component_common_ProgressDialog__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./component/common/ProgressDialog */ \"./src/component/common/ProgressDialog.jsx\");\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './component/src/src'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _component_institution_TeacherDetail__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./component/institution/TeacherDetail */ \"./src/component/institution/TeacherDetail.jsx\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/**\r\n * 错误展示\r\n * @param {*} component\r\n * @returns\r\n */\nfunction suspenseLoading(component) {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, {\n    fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_common_ProgressDialog__WEBPACK_IMPORTED_MODULE_11__[\"default\"], {\n      loading: true,\n      title: \"\\u6B63\\u5728\\u52A0\\u8F7D\\uFF0C\\u8BF7\\u7A0D\\u5019\\u2026\\u2026\"\n    })\n  }, component);\n}\n\n/**\r\n * 待渲染的路由\r\n */\nvar router = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_14__.createBrowserRouter)([{\n  path: \"/login\",\n  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_login_Login__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null),\n  errorElement: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_error_RootError__WEBPACK_IMPORTED_MODULE_9__[\"default\"], null)),\n  loader: _component_login_Login__WEBPACK_IMPORTED_MODULE_2__.loader\n}, {\n  path: \"/register\",\n  element: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_register_Register__WEBPACK_IMPORTED_MODULE_6__[\"default\"], null)),\n  errorElement: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_error_RootError__WEBPACK_IMPORTED_MODULE_9__[\"default\"], null)),\n  loader: _component_register_Register__WEBPACK_IMPORTED_MODULE_6__.loader\n}, {\n  path: \"/\",\n  element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_root_Root__WEBPACK_IMPORTED_MODULE_8__[\"default\"], null),\n  errorElement: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_error_RootError__WEBPACK_IMPORTED_MODULE_9__[\"default\"], null)),\n  children: [{\n    errorElement: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_error_Error__WEBPACK_IMPORTED_MODULE_10__[\"default\"], null)),\n    children: [\n    // 主页\n    {\n      index: true,\n      path: \"/homepage\",\n      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_homepage_HomePage__WEBPACK_IMPORTED_MODULE_4__[\"default\"], null),\n      loader: _component_homepage_HomePage__WEBPACK_IMPORTED_MODULE_4__.loader\n    },\n    // 学院\n    {\n      path: \"/institution\",\n      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_institution_InstitutionList__WEBPACK_IMPORTED_MODULE_7__[\"default\"], null),\n      loader: _component_institution_InstitutionList__WEBPACK_IMPORTED_MODULE_7__.loader\n    }, {\n      path: \"/institution/:institutionId\",\n      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"src\", null),\n      loader: Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './component/src/src'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()),\n      children: [{\n        path: \"teacher/:teacherId\",\n        element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_institution_TeacherDetail__WEBPACK_IMPORTED_MODULE_13__[\"default\"], null),\n        loader: _component_institution_TeacherDetail__WEBPACK_IMPORTED_MODULE_13__.loader\n      }]\n    },\n    // 个人信息\n    {\n      path: \"/person\",\n      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_person_Person__WEBPACK_IMPORTED_MODULE_5__[\"default\"], null),\n      loader: _component_person_Person__WEBPACK_IMPORTED_MODULE_5__.loader\n    },\n    // 论坛\n    {\n      path: \"/forum\",\n      element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_forum_Forum__WEBPACK_IMPORTED_MODULE_3__[\"default\"], null),\n      loader: _component_forum_Forum__WEBPACK_IMPORTED_MODULE_3__.loader\n    }, {\n      path: \"error\",\n      element: suspenseLoading(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_component_error_Error__WEBPACK_IMPORTED_MODULE_10__[\"default\"], null))\n    }]\n  }]\n}]);\n\n/**\r\n * 单页应用，获取主页面的 body\r\n */\nvar pxxy = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById(\"pxxy\"));\n\n/**\r\n * 根据路由渲染\r\n */\npxxy.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_14__.RouterProvider, {\n  router: router\n})));\n\n//# sourceURL=webpack://pxxy/./src/pxxy.jsx?");
 
@@ -3347,136 +3351,20 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   abs: () => (/* binding */ abs),\n/* harmony export */   append: () => (/* binding */ append),\n/* harmony export */   assign: () => (/* binding */ assign),\n/* harmony export */   charat: () => (/* binding */ charat),\n/* harmony export */   combine: () => (/* binding */ combine),\n/* harmony export */   from: () => (/* binding */ from),\n/* harmony export */   hash: () => (/* binding */ hash),\n/* harmony export */   indexof: () => (/* binding */ indexof),\n/* harmony export */   match: () => (/* binding */ match),\n/* harmony export */   replace: () => (/* binding */ replace),\n/* harmony export */   sizeof: () => (/* binding */ sizeof),\n/* harmony export */   strlen: () => (/* binding */ strlen),\n/* harmony export */   substr: () => (/* binding */ substr),\n/* harmony export */   trim: () => (/* binding */ trim)\n/* harmony export */ });\n/**\n * @param {number}\n * @return {number}\n */\nvar abs = Math.abs\n\n/**\n * @param {number}\n * @return {string}\n */\nvar from = String.fromCharCode\n\n/**\n * @param {object}\n * @return {object}\n */\nvar assign = Object.assign\n\n/**\n * @param {string} value\n * @param {number} length\n * @return {number}\n */\nfunction hash (value, length) {\n\treturn charat(value, 0) ^ 45 ? (((((((length << 2) ^ charat(value, 0)) << 2) ^ charat(value, 1)) << 2) ^ charat(value, 2)) << 2) ^ charat(value, 3) : 0\n}\n\n/**\n * @param {string} value\n * @return {string}\n */\nfunction trim (value) {\n\treturn value.trim()\n}\n\n/**\n * @param {string} value\n * @param {RegExp} pattern\n * @return {string?}\n */\nfunction match (value, pattern) {\n\treturn (value = pattern.exec(value)) ? value[0] : value\n}\n\n/**\n * @param {string} value\n * @param {(string|RegExp)} pattern\n * @param {string} replacement\n * @return {string}\n */\nfunction replace (value, pattern, replacement) {\n\treturn value.replace(pattern, replacement)\n}\n\n/**\n * @param {string} value\n * @param {string} search\n * @return {number}\n */\nfunction indexof (value, search) {\n\treturn value.indexOf(search)\n}\n\n/**\n * @param {string} value\n * @param {number} index\n * @return {number}\n */\nfunction charat (value, index) {\n\treturn value.charCodeAt(index) | 0\n}\n\n/**\n * @param {string} value\n * @param {number} begin\n * @param {number} end\n * @return {string}\n */\nfunction substr (value, begin, end) {\n\treturn value.slice(begin, end)\n}\n\n/**\n * @param {string} value\n * @return {number}\n */\nfunction strlen (value) {\n\treturn value.length\n}\n\n/**\n * @param {any[]} value\n * @return {number}\n */\nfunction sizeof (value) {\n\treturn value.length\n}\n\n/**\n * @param {any} value\n * @param {any[]} array\n * @return {any}\n */\nfunction append (value, array) {\n\treturn array.push(value), value\n}\n\n/**\n * @param {string[]} array\n * @param {function} callback\n * @return {string}\n */\nfunction combine (array, callback) {\n\treturn array.map(callback).join('')\n}\n\n\n//# sourceURL=webpack://pxxy/./node_modules/stylis/src/Utility.js?");
+=======
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Cannot find module '@babel/core'\\nRequire stack:\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\loader-runner\\\\lib\\\\loadLoader.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack\\\\lib\\\\Compiler.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack\\\\lib\\\\webpack.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack\\\\lib\\\\index.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack-cli\\\\lib\\\\webpack-cli.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack-cli\\\\lib\\\\bootstrap.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack-cli\\\\bin\\\\cli.js\\n- D:\\\\program\\\\pxxy\\\\node_modules\\\\webpack\\\\bin\\\\webpack.js\\n babel-loader@9 requires Babel 7.12+ (the package '@babel/core'). If you'd like to use Babel 6.x ('babel-core'), you should install 'babel-loader@7'.\\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1134:15)\\n    at Module._load (node:internal/modules/cjs/loader:975:27)\\n    at Module.require (node:internal/modules/cjs/loader:1225:19)\\n    at require (node:internal/modules/helpers:177:18)\\n    at Object.<anonymous> (D:\\\\program\\\\pxxy\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:3:11)\\n    at Module._compile (node:internal/modules/cjs/loader:1356:14)\\n    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)\\n    at Module.load (node:internal/modules/cjs/loader:1197:32)\\n    at Module._load (node:internal/modules/cjs/loader:1013:12)\\n    at Module.require (node:internal/modules/cjs/loader:1225:19)\");\n\n//# sourceURL=webpack://pxxy/./src/pxxy.jsx?");
+>>>>>>> loginAndLogout
 
 /***/ })
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
-/******/ 	
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
-/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
-/******/ 		if (cachedModule !== undefined) {
-/******/ 			return cachedModule.exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
-/******/ 			loaded: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
-/******/ 	
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/create fake namespace object */
-/******/ 	(() => {
-/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
-/******/ 		var leafPrototypes;
-/******/ 		// create a fake namespace object
-/******/ 		// mode & 1: value is a module id, require it
-/******/ 		// mode & 2: merge all properties of value into the ns
-/******/ 		// mode & 4: return value when already ns object
-/******/ 		// mode & 16: return value when it's Promise-like
-/******/ 		// mode & 8|1: behave like require
-/******/ 		__webpack_require__.t = function(value, mode) {
-/******/ 			if(mode & 1) value = this(value);
-/******/ 			if(mode & 8) return value;
-/******/ 			if(typeof value === 'object' && value) {
-/******/ 				if((mode & 4) && value.__esModule) return value;
-/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
-/******/ 			}
-/******/ 			var ns = Object.create(null);
-/******/ 			__webpack_require__.r(ns);
-/******/ 			var def = {};
-/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
-/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
-/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
-/******/ 			}
-/******/ 			def['default'] = () => (value);
-/******/ 			__webpack_require__.d(ns, def);
-/******/ 			return ns;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/node module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nmd = (module) => {
-/******/ 			module.paths = [];
-/******/ 			if (!module.children) module.children = [];
-/******/ 			return module;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pxxy.jsx");
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/pxxy.jsx"]();
 /******/ 	
 /******/ })()
 ;

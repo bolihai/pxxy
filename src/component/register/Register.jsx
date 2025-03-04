@@ -1,10 +1,17 @@
 import React from "react";
-
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+<<<<<<< HEAD
 import { EditTextField, RowFlexBoxAS } from "../common/Common";
 import Card from "@mui/material/Card";
 import { Link } from "react-router-dom";
+=======
+import IconButton from "@mui/material/IconButton";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { EditTextField } from "../common/Common";
+import Card from "@mui/material/Card";
+import { Link, useNavigate } from "react-router-dom";
+>>>>>>> loginAndLogout
 
 /**
  * 注册的 loader
@@ -14,6 +21,8 @@ export async function loader() {
 }
 
 export default function Register() {
+  const navigate = useNavigate(); // 使用 useNavigate 钩子
+
   return (
     <Box
       sx={{
@@ -31,7 +40,7 @@ export default function Register() {
           width: 1000,
           textAlign: "center",
           flexDirection: "row",
-          display: " flex",
+          display: "flex",
         }}
       >
         <a href="https://www.pxc.jx.cn">
@@ -75,13 +84,27 @@ export default function Register() {
             alignContent: "center",
             alignItems: "center",
             backgroundColor: "rgba(255, 255, 255, 0.8)",
+            position: "relative",
           }}
         >
+          <IconButton
+            onClick={() => navigate(-1)}
+            sx={{
+              position: "absolute",
+              top: 16,
+              left: 16,
+              color: "#862617",
+              "&:hover": {
+                color: "rgba(134, 38, 23, 0.8)",
+              },
+            }}
+          >
+            <ArrowBackIcon />
+          </IconButton>
           <Typography variant="h4">注册</Typography>
           <form
             style={{
               flexDirection: "column",
-
               flexFlow: "column nowrap",
               display: "flex",
             }}
@@ -127,15 +150,18 @@ export default function Register() {
               }}
             />
 
-            <Button
-              variant="contained"
+            <Box
               sx={{
-                backgroundColor: "#862617",
-                "&:hover": {
-                  backgroundColor: "rgba(134, 38, 23, 0.8)",
-                },
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                marginLeft: 5,
+                gap: 2,
               }}
             >
+<<<<<<< HEAD
               注册
             </Button>
             <RowFlexBoxAS marginTop={2}>
@@ -143,6 +169,21 @@ export default function Register() {
                 <Typography>已有账户？</Typography>
               </Link>
             </RowFlexBoxAS>
+=======
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#862617",
+                  "&:hover": {
+                    backgroundColor: "rgba(134, 38, 23, 0.8)",
+                  },
+                }}
+              >
+                注册
+              </Button>
+              <Link to="/login">已有账户？</Link>
+            </Box>
+>>>>>>> loginAndLogout
           </form>
         </Card>
       </Box>

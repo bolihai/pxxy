@@ -18,13 +18,20 @@ const buttonStyles = (isActive) => ({
   },
 });
 const Items = [
+<<<<<<< HEAD
   { label: "首页", to: "/homepage" },
   { label: "论坛", to: "/forum" },
   { label: "学院", to: "/institution" },
+=======
+  { label: "首页", to: "/" },
+  // { label: "论坛", to: "/forum" },
+  { label: "教师", to: "/academy" },
+>>>>>>> loginAndLogout
   { label: "个人", to: "/person" },
+  { label: "学校概况", to: "/schoolProfile" },
 ];
 export default function TopBar() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive] = useState(false);
   const isMaxScreenWidth = useMediaQuery("(max-width: 920px)");
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -124,6 +131,7 @@ export default function TopBar() {
               alignItems: "flex-end",
               flexDirection: "row",
               pl: "450px",
+              marginLeft: 60,
             }}
           >
             {Items.map((item) => (

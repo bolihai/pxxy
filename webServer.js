@@ -27,6 +27,9 @@ mongoose
     process.exit(1);
   });
 
+// 挂载老师路由
+app.use("/server/teacher", require("./src/server/teacher"));
+
 /**
  * 获取指定学院的所有老师的id，名字和头像
  */
