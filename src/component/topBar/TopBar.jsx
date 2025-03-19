@@ -1,8 +1,18 @@
-import React, { useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
+import {
+  Box,
+  Button,
+  Typography,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
+} from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { Link, Link as RouterLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const buttonStyles = (isActive) => ({
   fontSize: isActive ? "32px" : "28px",
   fontFamily: "monospace",
@@ -17,15 +27,44 @@ const buttonStyles = (isActive) => ({
     color: "#fff",
   },
 });
+
 const Items = [
   { label: "首页", to: "/" },
   { label: "教师", to: "/academy" },
   { label: "个人", to: "/edit" },
   { label: "学校概述", to: "/school" },
 ];
+
 export default function TopBar() {
   const [isActive] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
   const isMaxScreenWidth = useMediaQuery("(max-width: 920px)");
+  const navigate = useNavigate();
+
+  // 检查是否有 sessionStorage 中的用户信息
+  useEffect(() => {
+    const user = sessionStorage.getItem("user");
+    if (user) {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    setOpenDialog(true);
+  };
+
+  const handleDialogConfirm = () => {
+    // 清除 sessionStorage 中的用户信息
+    sessionStorage.removeItem("user");
+    setIsLoggedIn(false);
+    setOpenDialog(false);
+  };
+
+  const handleDialogCancel = () => {
+    setOpenDialog(false);
+  };
+
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Box
@@ -99,11 +138,10 @@ export default function TopBar() {
           >
             <Button
               sx={{ ...buttonStyles(false), mr: "60px", fontSize: "16px" }}
-              component={Link}
-              to="/login"
+              onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
             >
               <AccountCircleIcon sx={{ mr: 1, fontSize: "24px" }} />
-              登录
+              {isLoggedIn ? "退出登录" : "登录"}
             </Button>
           </Box>
         )}
@@ -130,7 +168,7 @@ export default function TopBar() {
             {Items.map((item) => (
               <Button
                 key={item.to}
-                component={RouterLink}
+                component={Link}
                 to={item.to}
                 sx={buttonStyles(isActive)}
               >
@@ -140,6 +178,22 @@ export default function TopBar() {
           </Box>
         </Box>
       )}
+
+      {/* 退出登录对话框 */}
+      <Dialog open={openDialog} onClose={handleDialogCancel}>
+        <DialogTitle>确认退出</DialogTitle>
+        <DialogContent>
+          <DialogContentText>您确定要退出登录吗？</DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleDialogCancel} color="primary">
+            取消
+          </Button>
+          <Button onClick={handleDialogConfirm} color="primary" autoFocus>
+            确定
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 }
