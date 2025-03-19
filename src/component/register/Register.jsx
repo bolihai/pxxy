@@ -1,17 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-<<<<<<< HEAD
-import { EditTextField, RowFlexBoxAS } from "../common/Common";
-import Card from "@mui/material/Card";
-import { Link } from "react-router-dom";
-=======
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { EditTextField } from "../common/Common";
 import Card from "@mui/material/Card";
 import { Link, useNavigate } from "react-router-dom";
->>>>>>> loginAndLogout
 
 /**
  * 注册的 loader
@@ -161,15 +155,6 @@ export default function Register() {
                 gap: 2,
               }}
             >
-<<<<<<< HEAD
-              注册
-            </Button>
-            <RowFlexBoxAS marginTop={2}>
-              <Link to={"/login"}>
-                <Typography>已有账户？</Typography>
-              </Link>
-            </RowFlexBoxAS>
-=======
               <Button
                 variant="contained"
                 sx={{
@@ -183,7 +168,6 @@ export default function Register() {
               </Button>
               <Link to="/login">已有账户？</Link>
             </Box>
->>>>>>> loginAndLogout
           </form>
         </Card>
       </Box>

@@ -1,17 +1,12 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-<<<<<<< HEAD
-import { EditTextField, ColumnFlexBoxAC, RowFlexBoxAS } from "../common/Common";
-import Card from "@mui/material/Card";
-import { Link } from "react-router-dom";
-=======
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { EditTextField, ColumnFlexBoxAC } from "../common/Common";
+import { EditTextField } from "../common/Common";
 import Card from "@mui/material/Card";
-import { Link, useNavigate } from "react-router-dom";
->>>>>>> loginAndLogout
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 /**
  * 登录的 loader
@@ -21,12 +16,25 @@ export async function loader() {
 }
 
 export default function Login() {
-<<<<<<< HEAD
-  console.log(document.documentElement.scrollTop);
-=======
-  const navigate = useNavigate(); // 使用 useNavigate 钩子
+  const navigate = useNavigate();
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
 
->>>>>>> loginAndLogout
+  // 处理登录逻辑
+  const handleLogin = async () => {
+    try {
+      const result = await Login(email, password);
+      if (result.success) {
+        navigate("/");
+      } else {
+        alert(result.message || "登录失败");
+      }
+    } catch (error) {
+      console.error("登录请求失败", error);
+      alert("登录请求失败，请检查网络或稍后重试");
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -35,7 +43,7 @@ export default function Login() {
         height: `100vh`,
         flexDirection: "column",
         backgroundSize: "cover",
-        backgroundImage: 'url( "./assets/images/backgroundImage.jpg")',
+        backgroundImage: 'url("./assets/images/backgroundImage.jpg")',
       }}
     >
       <Box
@@ -112,6 +120,10 @@ export default function Login() {
               flexFlow: "column nowrap",
               display: "flex",
             }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleLogin();
+            }}
           >
             <EditTextField
               id="email"
@@ -123,6 +135,8 @@ export default function Login() {
                 width: 400,
                 mb: 5,
               }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <EditTextField
               id="password"
@@ -133,6 +147,8 @@ export default function Login() {
                 width: 400,
                 mb: 5,
               }}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <Box
               sx={{
@@ -141,19 +157,9 @@ export default function Login() {
                 alignItems: "center",
                 justifyContent: "center",
                 width: "100%",
-                marginLeft: 5,
                 gap: 2,
               }}
             >
-<<<<<<< HEAD
-              登录
-            </Button>
-            <RowFlexBoxAS marginTop={2}>
-              <Link to={"/register"}>
-                <Typography>没有账户？</Typography>
-              </Link>
-            </RowFlexBoxAS>
-=======
               <Button
                 variant="contained"
                 sx={{
@@ -162,12 +168,11 @@ export default function Login() {
                     backgroundColor: "rgba(134, 38, 23, 0.8)",
                   },
                 }}
+                type="submit"
               >
                 登录
               </Button>
-              <Link to="/register">没有账户？</Link>
             </Box>
->>>>>>> loginAndLogout
           </form>
         </Card>
       </Box>

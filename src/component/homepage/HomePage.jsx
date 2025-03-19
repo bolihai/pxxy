@@ -23,20 +23,6 @@ export async function loader() {
 }
 
 export default function HomePage() {
-<<<<<<< HEAD
-  const carouselItems = [
-    { name: "林一", image: "/assets/images/example.jpg" },
-    { name: "彭二", image: "/assets/images/example2.jpg" },
-    { name: "张三", image: "/assets/images/example3.jpg" },
-    { name: "李四", image: "/assets/images/example4.jpg" },
-    { name: "王五", image: "/assets/images/example5.jpg" },
-    { name: "赵六", image: "/assets/images/example6.jpg" },
-    { name: "钱七", image: "/assets/images/example.jpg" },
-    { name: "孙八", image: "/assets/images/example2.jpg" },
-    { name: "周九", image: "/assets/images/example3.jpg" },
-    { name: "吴十", image: "/assets/images/example4.jpg" },
-  ];
-=======
   const navigate = useNavigate();
   const { teachers, error } = useLoaderData();
   const extractedData = teachers.map((item) => ({
@@ -45,7 +31,6 @@ export default function HomePage() {
     department: item.department,
     label: `${item.fullName} ${item.gender} ${item.department}`,
   }));
->>>>>>> loginAndLogout
 
   const carouselItems = teachers.map((teacher) => ({
     src: teacher.src,

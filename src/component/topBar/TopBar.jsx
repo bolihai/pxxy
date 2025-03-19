@@ -18,17 +18,9 @@ const buttonStyles = (isActive) => ({
   },
 });
 const Items = [
-<<<<<<< HEAD
-  { label: "首页", to: "/homepage" },
-  { label: "论坛", to: "/forum" },
-  { label: "学院", to: "/institution" },
-=======
   { label: "首页", to: "/" },
-  // { label: "论坛", to: "/forum" },
   { label: "教师", to: "/academy" },
->>>>>>> loginAndLogout
-  { label: "个人", to: "/person" },
-  { label: "学校概况", to: "/schoolProfile" },
+  { label: "个人", to: "/edit" },
 ];
 export default function TopBar() {
   const [isActive] = useState(false);

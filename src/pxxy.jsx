@@ -7,33 +7,25 @@ import HomePage, {
   loader as homePageLoader,
 } from "./component/homepage/HomePage";
 import Person, { loader as personLoader } from "./component/person/Person";
-<<<<<<< HEAD
-=======
-import SchoolProfile, {
-  loader as schoolProfileLoader,
-} from "./component/schoolProfile/SchoolProfile";
->>>>>>> loginAndLogout
+import PersonEdit from "./component/personEdit/personEdit";
+// import SchoolProfile, {
+//   loader as schoolProfileLoader,
+// } from "./component/schoolProfile/SchoolProfile";
 import Register, {
   loader as registerLoader,
 } from "./component/register/Register";
-import InstitutionList, {
-  loader as institutionListLoader,
-} from "./component/institution/InstitutionList";
+import TeacherDetail, {
+  loader as teacherDetailLoader,
+} from "./component/institution/TeacherDetail";
 import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";
 import ProgressDialog from "./component/common/ProgressDialog";
-<<<<<<< HEAD
-import src, { loader as srcLoader } from "./component/src/src";
-import TeacherDetail, {
-  loader as teacherDetailLoader,
-} from "./component/institution/TeacherDetail";
-=======
 import Academy, { loader as AcademyLoader } from "./component/teacher/Academy";
 import AcademyDetail, {
   loader as AcademyDetailLoader,
 } from "./component/teacher/AcademyDetail";
->>>>>>> loginAndLogout
+import srcLoader from "./component/institution/InstitutionDetail";
 
 /**
  * 错误展示
@@ -77,17 +69,11 @@ const router = createBrowserRouter([
           // 主页
           {
             index: true,
-            path: "/",
             element: <HomePage />,
             loader: homePageLoader,
           },
           // 学院
           {
-<<<<<<< HEAD
-            path: "/institution",
-            element: <InstitutionList />,
-            loader: institutionListLoader,
-=======
             path: "/academy",
             element: <Academy />,
             loader: AcademyLoader,
@@ -99,13 +85,28 @@ const router = createBrowserRouter([
               },
             ],
           },
-          // 跳转人员
+          // 人员相关路由
           {
-            path: "/person/:fullName",
-            element: <Person />,
-            loader: personLoader,
->>>>>>> loginAndLogout
+            path: "person",
+            children: [
+              {
+                index: true,
+                element: <Person />,
+                loader: personLoader,
+              },
+              {
+                path: ":fullName",
+                element: <Person />,
+                loader: personLoader,
+              },
+            ],
           },
+          // 人员编辑
+          {
+            path: "edit",
+            element: <PersonEdit />,
+          },
+          // 机构相关路由
           {
             path: "/institution/:institutionId",
             element: <src />,
@@ -118,19 +119,13 @@ const router = createBrowserRouter([
               },
             ],
           },
-
-          // 个人信息
-          {
-            path: "/person",
-            element: <Person />,
-            loader: personLoader,
-          },
           // 论坛
           {
             path: "/forum",
             element: <Forum />,
             loader: forumLoader,
           },
+          // 错误
           {
             path: "error",
             element: suspenseLoading(<Error />),
