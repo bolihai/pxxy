@@ -8,15 +8,12 @@ import HomePage, {
 } from "./component/homepage/HomePage";
 import Person, { loader as personLoader } from "./component/person/Person";
 import PersonEdit from "./component/personEdit/personEdit";
-// import SchoolProfile, {
-//   loader as schoolProfileLoader,
-// } from "./component/schoolProfile/SchoolProfile";
+import SchoolProfile, {
+  loader as schoolProfileLoader,
+} from "./component/schoolProfile/SchoolProfile";
 import Register, {
   loader as registerLoader,
 } from "./component/register/Register";
-import TeacherDetail, {
-  loader as teacherDetailLoader,
-} from "./component/institution/TeacherDetail";
 import Root from "./component/root/Root";
 import RootError from "./component/error/RootError";
 import Error from "./component/error/Error";
@@ -25,7 +22,6 @@ import Academy, { loader as AcademyLoader } from "./component/teacher/Academy";
 import AcademyDetail, {
   loader as AcademyDetailLoader,
 } from "./component/teacher/AcademyDetail";
-import srcLoader from "./component/institution/InstitutionDetail";
 
 /**
  * 错误展示
@@ -77,13 +73,17 @@ const router = createBrowserRouter([
             path: "/academy",
             element: <Academy />,
             loader: AcademyLoader,
-            children: [
-              {
-                path: ":collegeName",
-                element: <AcademyDetail />,
-                loader: AcademyDetailLoader,
-              },
-            ],
+          },
+          {
+            path: "/academy/:collegeName",
+            element: <AcademyDetail />,
+            loader: AcademyDetailLoader,
+          },
+          // 学校概述
+          {
+            path: "/school",
+            element: <SchoolProfile />,
+            loader: schoolProfileLoader,
           },
           // 人员相关路由
           {
@@ -105,19 +105,6 @@ const router = createBrowserRouter([
           {
             path: "edit",
             element: <PersonEdit />,
-          },
-          // 机构相关路由
-          {
-            path: "/institution/:institutionId",
-            element: <src />,
-            loader: srcLoader,
-            children: [
-              {
-                path: "teacher/:teacherId",
-                element: <TeacherDetail />,
-                loader: teacherDetailLoader,
-              },
-            ],
           },
           // 论坛
           {

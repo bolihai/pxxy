@@ -19,19 +19,24 @@ export default function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [error, setError] = React.useState("");
 
-  // 处理登录逻辑
   const handleLogin = async () => {
     try {
-      const result = await Login(email, password);
-      if (result.success) {
+      const response = await axios.post("/server/teacher/login", {
+        email,
+        password,
+      });
+
+      console.log(response.data);
+      if (response.data) {
+        sessionStorage.setItem("user", response.data.user);
+        // 跳转到首页
         navigate("/");
-      } else {
-        alert(result.message || "登录失败");
       }
     } catch (error) {
-      console.error("登录请求失败", error);
-      alert("登录请求失败，请检查网络或稍后重试");
+      setError("登录失败，请检查邮箱和密码");
+      console.error("登录错误:", error);
     }
   };
 
@@ -127,7 +132,6 @@ export default function Login() {
           >
             <EditTextField
               id="email"
-              small
               label="邮箱"
               variant="standard"
               sx={{
@@ -150,6 +154,11 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            {error && (
+              <Typography color="error" sx={{ mb: 2 }}>
+                {error}
+              </Typography>
+            )}
             <Box
               sx={{
                 display: "flex",

@@ -21,6 +21,7 @@ const Items = [
   { label: "首页", to: "/" },
   { label: "教师", to: "/academy" },
   { label: "个人", to: "/edit" },
+  { label: "学校概述", to: "/school" },
 ];
 export default function TopBar() {
   const [isActive] = useState(false);
