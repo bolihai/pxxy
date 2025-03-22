@@ -31,7 +31,6 @@ const buttonStyles = (isActive) => ({
 const Items = [
   { label: "首页", to: "/" },
   { label: "教师", to: "/academy" },
-  { label: "个人", to: "/edit" },
   { label: "学校概述", to: "/school" },
 ];
 
@@ -59,6 +58,7 @@ export default function TopBar() {
     sessionStorage.removeItem("user");
     setIsLoggedIn(false);
     setOpenDialog(false);
+    navigate("/");
   };
 
   const handleDialogCancel = () => {
@@ -138,7 +138,11 @@ export default function TopBar() {
           >
             <Button
               sx={{ ...buttonStyles(false), mr: "60px", fontSize: "16px" }}
-              onClick={isLoggedIn ? handleLogout : () => navigate("/login")}
+              onClick={
+                isLoggedIn
+                  ? handleLogout
+                  : () => navigate("/login")
+              }
             >
               <AccountCircleIcon sx={{ mr: 1, fontSize: "24px" }} />
               {isLoggedIn ? "退出登录" : "登录"}
@@ -175,6 +179,11 @@ export default function TopBar() {
                 {item.label}
               </Button>
             ))}
+            {isLoggedIn && (
+              <Button component={Link} to="/edit" sx={buttonStyles(isActive)}>
+                个人
+              </Button>
+            )}
           </Box>
         </Box>
       )}

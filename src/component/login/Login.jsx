@@ -28,9 +28,8 @@ export default function Login() {
         password,
       });
 
-      console.log(response.data);
       if (response.data) {
-        sessionStorage.setItem("user", response.data.user);
+        sessionStorage.setItem("user", JSON.stringify(response.data));
         // 跳转到首页
         navigate("/");
       }

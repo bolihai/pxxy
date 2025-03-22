@@ -86,6 +86,22 @@ app.get("/getPeopleInfo", async (req, res) => {
 });
 
 /**
+ * 编辑人员信息
+ */
+app.post("/peopleEdit", async (req, res) => {
+  const { data } = req.body;
+  try {
+    const user = await UserSchema.findOneAndUpdate({ _id: data._id }, data, {
+      new: true,
+    });
+    res.status(200).send("成功");
+  } catch (e) {
+    console.log("出错了", e);
+    res.status(500).send("出错了");
+  }
+});
+
+/**
  * 根据路径返回对应的页面
  */
 app.get("/*", root(dist_dir));

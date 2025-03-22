@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Box,
   Container,
@@ -16,25 +16,25 @@ import {
 import PhotoCamera from "@mui/icons-material/PhotoCamera";
 import { editPeopleInfo } from "../../lib/teacher";
 
-// TODO: 根据登录人员的信息
 const initialData = {
-  fullName: "王五",
-  gender: "男",
-  department: "人文与传媒学院",
-  email: "wangwu@hmc.edu",
-  password: "Ww123456!",
-  portrait: "/assets/images/wangwu.jpg",
-  individualResume: "王五，人文与传媒学院教授，研究方向为传播学与社会变迁。",
-  education: "复旦大学 传播学博士",
-  researchField: "传播学",
-  telephone: "13800000003",
-  academicAchievement: "主持过多个国家级科研项目，出版学术专著5部。",
+  _id: "",
+  fullName: "",
+  gender: "",
+  department: "",
+  email: "",
+  password: "",
+  portrait: "",
+  individualResume: "",
+  education: "",
+  researchField: "",
+  telephone: "",
+  academicAchievement: "",
 };
 
 const onSubmit = async (values) => {
-  const result = await editPeopleInfo(values.fullName, values);
+  const result = await editPeopleInfo(values);
 
-  if (result.success) {
+  if (result && result.success) {
     setSnackbar({
       open: true,
       message: result.message,
@@ -108,6 +108,20 @@ export default function PersonEdit() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    const storedData = sessionStorage.getItem("user");
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      const filteredData = Object.keys(initialData).reduce((acc, key) => {
+        if (parsedData[key] !== undefined) {
+          acc[key] = parsedData[key];
+        }
+        return acc;
+      }, {});
+      setFormData(filteredData);
+    }
+  }, []);
 
   return (
     <Container sx={{ py: 4, maxWidth: "lg" }}>
@@ -296,8 +310,9 @@ export default function PersonEdit() {
               variant="contained"
               disabled={loading}
               sx={{ mr: 2 }}
+              onClick={handleSubmit}
             >
-              保存
+              提交
             </Button>
             <Button variant="outlined">取消</Button>
           </Box>
